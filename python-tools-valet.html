@@ -1120,6 +1120,17 @@
         </span>
         
         
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
     </div>
     
     <div class="toc-ref">
@@ -1512,7 +1523,32 @@ public function frontControllerPath($sitePath, $siteName, $uri)
 </article>
 
 
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
 
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: 'ec531c17625c7777084c',
+            clientSecret: '3e98d88a00e6e57404db30b275e289b85285d0da',
+            repo: 'wowdw.github.io',
+            owner: 'wowdw',
+            admin: ['wowdw'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
 
 
 
@@ -1524,7 +1560,11 @@ public function frontControllerPath($sitePath, $siteName, $uri)
 
     </div>
     <div class="copyright">
-        <p class="footer-entry">
+        <p class="footer-entry"><span class="miit">
+                <img src="/img/gov.png" title="中华人民共和国工业和信息化部">
+                <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">粤ICP备15101960号</a>
+        </span>
+    
     ©2016-2020 lzdong
 </p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
@@ -1536,6 +1576,24 @@ public function frontControllerPath($sitePath, $siteName, $uri)
 
     </div>
 </div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
 
 </body>
 <script src="/js/jquery.pjax.js?v=1.1.0" ></script>
@@ -1550,6 +1608,14 @@ public function frontControllerPath($sitePath, $siteName, $uri)
         
 
         /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
         
 
         /*高亮代码块行号*/
@@ -1568,6 +1634,11 @@ public function frontControllerPath($sitePath, $siteName, $uri)
     }
 
     /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
     
 
 </script>
