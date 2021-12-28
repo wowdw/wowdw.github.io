@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Js获取客户端IP | 小胖子的blog</title>
-  <meta name="keywords" content=" IP ">
-  <meta name="description" content="Js获取客户端IP | 小胖子的blog">
+  <title>VSCode 同步设置及扩展插件 实现设备上设置统一 | 小胖子的blog</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="VSCode 同步设置及扩展插件 实现设备上设置统一 | 小胖子的blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
@@ -1073,34 +1073,19 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-web/web-tool-jsgetip" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-VSCode-同步设置及扩展插件-实现设备上设置统一" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Js获取客户端IP</h1>
+        <h1 class="article-title">VSCode 同步设置及扩展插件 实现设备上设置统一</h1>
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="Web">Web</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color3">IP</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-03-27 20:42:02'>2020-07-06 10:50</time>
+            发布时间 : <time class="date" title='最后更新: 2021-06-15 10:24:49'>2021-06-15 10:24</time>
         
     </div>
     <div class="article-meta">
@@ -1122,7 +1107,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%85%AC%E7%BD%91IP"><span class="toc-text">获取客户端公网IP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%8B%90%E6%8E%A5%E5%8F%A3"><span class="toc-text">搜狐接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%98%E5%AE%9D%E6%8E%A5%E5%8F%A3"><span class="toc-text">淘宝接口</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -1138,45 +1123,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="获取客户端公网IP"><a href="#获取客户端公网IP" class="headerlink" title="获取客户端公网IP"></a>获取客户端公网IP</h2><h3 id="搜狐接口"><a href="#搜狐接口" class="headerlink" title="搜狐接口"></a>搜狐接口</h3><pre><code class="bash">&lt;script src=&quot;http://pv.sohu.com/cityjson?ie=utf-8&quot;&gt;&lt;/script&gt;
-</code></pre>
-<p>数据格式</p>
-<pre><code class="bash">var returnCitySN = &#123;&quot;cip&quot;: &quot;182.239.114.113&quot;, &quot;cid&quot;: &quot;810000&quot;, &quot;cname&quot;: &quot;香港特别行政区&quot;&#125;;
-</code></pre>
-<p>使用</p>
-<pre><code class="bash">&lt;script type=&quot;text/javascript&quot;&gt;
-    document.write(returnCitySN[&quot;cip&quot;]+&#39;,&#39;+returnCitySN[&quot;cname&quot;])
-&lt;/script&gt;
-</code></pre>
-<h3 id="淘宝接口"><a href="#淘宝接口" class="headerlink" title="淘宝接口"></a>淘宝接口</h3><pre><code class="bash">POST : http://ip.taobao.com/outGetIpInfo
-
-参数
-ip:myip
-accessKey:alibaba-inc
-</code></pre>
-<p>数据格式</p>
-<pre><code class="bash">&#123;
-    &quot;data&quot;: &#123;
-        &quot;area&quot;: &quot;&quot;,
-        &quot;country&quot;: &quot;中国&quot;,
-        &quot;isp_id&quot;: &quot;100025&quot;,
-        &quot;queryIp&quot;: &quot;182.239.114.113&quot;,
-        &quot;city&quot;: &quot;XX&quot;,
-        &quot;ip&quot;: &quot;182.239.114.113&quot;,
-        &quot;isp&quot;: &quot;移动&quot;,
-        &quot;county&quot;: &quot;&quot;,
-        &quot;region_id&quot;: &quot;810000&quot;,
-        &quot;area_id&quot;: &quot;&quot;,
-        &quot;county_id&quot;: null,
-        &quot;region&quot;: &quot;香港&quot;,
-        &quot;country_id&quot;: &quot;HK&quot;,
-        &quot;city_id&quot;: &quot;xx&quot;
-        &#125;,
-    &quot;msg&quot;: &quot;query success&quot;,
-    &quot;code&quot;: 0
-&#125;
-</code></pre>
-
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 lzdong@foxmail.com </span>
     </div>
