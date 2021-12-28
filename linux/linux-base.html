@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>linux bash 命令入门 | 小胖子的blog</title>
+  <meta name="keywords" content=" Linux , bash ">
+  <meta name="description" content="linux bash 命令入门 | 小胖子的blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="标签">
+<meta property="og:url" content="https://blog.ydmgx.com/tags/index.html">
+<meta property="og:site_name" content="小胖子的blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-05T12:25:35.000Z">
+<meta property="article:modified_time" content="2020-07-06T03:44:17.674Z">
+<meta property="article:author" content="小胖子">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/zenbum.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>小胖子</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/wowdw"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(72)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="工具">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        工具
+                        <small>(20)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="工具<--->软件记录">
+                                        
+                                        软件记录
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="工具<--->Git">
+                                        
+                                        Git
+                                        
+                                            <small>(9
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="工具<--->Mac">
+                                        
+                                        Mac
+                                        
+                                            <small>(2
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="工具<--->Node.js">
+                                        
+                                        Node.js
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="工具<--->Python">
+                                        
+                                        Python
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="数据库">
+                        
+                        数据库
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="架构">
+                        
+                        架构
+                        <small>(3)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Laravel">
+                        
+                        Laravel
+                        <small>(18)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        
+                        Linux
+                        <small>(13)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="PHP">
+                        
+                        PHP
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Web">
+                        
+                        Web
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="72">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>跨域</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>canvas</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Centos</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Composer</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>crontab</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ImageMagick</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>imagick</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iptables</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JSON</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Laravel</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lnmp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Mac</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Mysql</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Node.js</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ohmyzsh</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>PHP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>regex</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SSH</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>web</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Yum</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="全部文章 工具 "
+           href="/ohmyzsh-plugins-composer.html"
+           data-tag="ohmyzsh"
+           data-author="" >
+            <span class="post-title" title="ohmyzsh插件 composer 相关命令">ohmyzsh插件 composer 相关命令</span>
+            <span class="post-date" title="2021-04-19 10:21:22">2021/04/19</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/Markdown-Addition-and-deletion-effect.html"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown 如何实现代码增删对比效果">Markdown 如何实现代码增删对比效果</span>
+            <span class="post-date" title="2021-03-29 19:04:22">2021/03/29</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/ohmyzsh-plugins-laravel.html"
+           data-tag="ohmyzsh"
+           data-author="" >
+            <span class="post-title" title="ohmyzsh插件laravel相关命令">ohmyzsh插件laravel相关命令</span>
+            <span class="post-date" title="2021-03-27 22:13:58">2021/03/27</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/web-nginx-php-vue.html"
+           data-tag="web"
+           data-author="" >
+            <span class="post-title" title="Nginx代理同域名前后端分离项目">Nginx代理同域名前后端分离项目</span>
+            <span class="post-date" title="2021-03-07 20:42:10">2021/03/07</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/web-tools-UI-Avatars.html"
+           data-tag="web"
+           data-author="" >
+            <span class="post-title" title="UI Avatars 拿来即用的头像生成Api">UI Avatars 拿来即用的头像生成Api</span>
+            <span class="post-date" title="2021-03-06 20:42:10">2021/03/06</span>
+        </a>
+        
+        <a  class="全部文章 工具 Mac "
+           href="/mac-tools-Homebrew.html"
+           data-tag="Mac"
+           data-author="" >
+            <span class="post-title" title="MacOS软件包管理工具Homebrew">MacOS软件包管理工具Homebrew</span>
+            <span class="post-date" title="2021-03-05 21:42:10">2021/03/05</span>
+        </a>
+        
+        <a  class="全部文章 工具 Mac "
+           href="/mac-tools-iTerm2.html"
+           data-tag="Mac"
+           data-author="" >
+            <span class="post-title" title="Mac系统终端iTerm2">Mac系统终端iTerm2</span>
+            <span class="post-date" title="2021-03-05 20:42:10">2021/03/05</span>
+        </a>
+        
+        <a  class="全部文章 工具 Python "
+           href="/python-tools-pyenv.html"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="Python版本管理工具 pyenv">Python版本管理工具 pyenv</span>
+            <span class="post-date" title="2021-03-05 19:42:10">2021/03/05</span>
+        </a>
+        
+        <a  class="全部文章 工具 Node.js "
+           href="/nodejs-tools-n.html"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="node.js版本管理工具n">node.js版本管理工具n</span>
+            <span class="post-date" title="2021-03-05 18:42:55">2021/03/05</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/http-status-code.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="HTTP状态码（HTTP STATUS CODE）大全">HTTP状态码（HTTP STATUS CODE）大全</span>
+            <span class="post-date" title="2020-08-26 15:00:06">2020/08/26</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php-composer.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Composer安装">Composer安装</span>
+            <span class="post-date" title="2020-08-25 22:26:16">2020/08/25</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/web-jsonp.html"
+           data-tag="跨域"
+           data-author="" >
+            <span class="post-title" title="JSONP跨域">JSONP跨域</span>
+            <span class="post-date" title="2020-08-25 22:19:00">2020/08/25</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/canvas-doc.html"
+           data-tag="canvas"
+           data-author="" >
+            <span class="post-title" title="canvas 常用操作">canvas 常用操作</span>
+            <span class="post-date" title="2020-08-25 22:11:04">2020/08/25</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/python-tools-valet.html"
+           data-tag="Mac"
+           data-author="" >
+            <span class="post-title" title="Valet 集成开发环境">Valet 集成开发环境</span>
+            <span class="post-date" title="2020-08-08 21:41:46">2020/08/08</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/web-tool-jscdn.html"
+           data-tag="JS"
+           data-author="" >
+            <span class="post-title" title="JS公共库">JS公共库</span>
+            <span class="post-date" title="2020-07-09 15:58:23">2020/07/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-update.html"
+           data-tag="Git,Centos"
+           data-author="" >
+            <span class="post-title" title="Git版本升级">Git版本升级</span>
+            <span class="post-date" title="2020-07-09 15:58:23">2020/07/09</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/web-tool-jsgetip.html"
+           data-tag="IP"
+           data-author="" >
+            <span class="post-title" title="Js获取客户端IP">Js获取客户端IP</span>
+            <span class="post-date" title="2020-07-06 10:50:40">2020/07/06</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-label.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git标签管理">Git标签管理</span>
+            <span class="post-date" title="2020-07-05 20:20:07">2020/07/05</span>
+        </a>
+        
+        <a  class="全部文章 架构 "
+           href="/Design-of-membership-points-system.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="会员积分体系设计">会员积分体系设计</span>
+            <span class="post-date" title="2020-03-30 15:15:30">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 架构 "
+           href="/Design-of-general-payment-service-in-single-application.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="单体应用中的通用支付服务设计">单体应用中的通用支付服务设计</span>
+            <span class="post-date" title="2020-03-30 15:15:30">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 架构 "
+           href="/User-wallet-design.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="用户钱包（账户）设计">用户钱包（账户）设计</span>
+            <span class="post-date" title="2020-03-30 15:15:30">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/laravel/laravel-composer.html"
+           data-tag="PHP,Composer"
+           data-author="" >
+            <span class="post-title" title="Composer 版本号前置~与^符号的区别">Composer 版本号前置~与^符号的区别</span>
+            <span class="post-date" title="2020-03-19 12:06:23">2020/03/19</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-aggregate-group.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-聚合分组">MySQL-聚合分组</span>
+            <span class="post-date" title="2019-12-14 12:11:17">2019/12/14</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-index.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-索引">MySQL-索引</span>
+            <span class="post-date" title="2019-12-13 12:11:17">2019/12/13</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-user-password.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-8修改用户登录密码">MySQL-8修改用户登录密码</span>
+            <span class="post-date" title="2019-12-11 13:02:20">2019/12/11</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-user.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-用户添加及权限">MySQL-用户添加及权限</span>
+            <span class="post-date" title="2019-11-11 13:32:17">2019/11/11</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-base.html"
+           data-tag="Linux,bash"
+           data-author="" >
+            <span class="post-title" title="linux bash 命令入门">linux bash 命令入门</span>
+            <span class="post-date" title="2019-11-11 13:32:17">2019/11/11</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-field-type.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-数据的字段类型">MySQL-数据的字段类型</span>
+            <span class="post-date" title="2019-10-13 12:11:17">2019/10/13</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-base.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-库表操作基础命令">MySQL-库表操作基础命令</span>
+            <span class="post-date" title="2019-10-11 13:32:17">2019/10/11</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-bt-webhook.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="宝塔WebHook自动部署-Gogs">宝塔WebHook自动部署-Gogs</span>
+            <span class="post-date" title="2019-04-02 00:45:43">2019/04/02</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/CentOS-password-free-switch-to-root.html"
+           data-tag="Linux,SSH"
+           data-author="" >
+            <span class="post-title" title="CentOS免密码切换至root">CentOS免密码切换至root</span>
+            <span class="post-date" title="2019-04-02 00:08:51">2019/04/02</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php/PHP-date%E6%97%B6%E9%97%B4.html"
+           data-tag="PHP"
+           data-author="" >
+            <span class="post-title" title="PHP date时间">PHP date时间</span>
+            <span class="post-date" title="2019-03-26 23:37:47">2019/03/26</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-redis.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel操作redis数据库的数据类型(string、哈希、无序集合、list链表、有序集合)">Laravel操作redis数据库的数据类型(string、哈希、无序集合、list链表、有序集合)</span>
+            <span class="post-date" title="2019-03-26 23:23:30">2019/03/26</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-file-update.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 文件上传">Laravel 文件上传</span>
+            <span class="post-date" title="2019-03-26 22:59:34">2019/03/26</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-centos-path.html"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="CentOS环境变量配置">CentOS环境变量配置</span>
+            <span class="post-date" title="2019-03-20 11:51:28">2019/03/20</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-csrf-git.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel中ajax post提交csrf token的最优化解决方式">Laravel中ajax post提交csrf token的最优化解决方式</span>
+            <span class="post-date" title="2019-02-19 12:06:23">2019/02/19</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-queue.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel-队列">Laravel-队列</span>
+            <span class="post-date" title="2019-02-19 12:06:23">2019/02/19</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel-adminLte.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel-adminLte 后台搭建">Laravel-adminLte 后台搭建</span>
+            <span class="post-date" title="2019-02-19 12:06:23">2019/02/19</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/Laravel-route-cache.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel-路由缓存">Laravel-路由缓存</span>
+            <span class="post-date" title="2018-10-08 23:10:06">2018/10/08</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-routes-RESTful.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel-资源路由">Laravel-资源路由</span>
+            <span class="post-date" title="2018-10-08 22:50:33">2018/10/08</span>
+        </a>
+        
+        <a  class="全部文章 工具 软件记录 "
+           href="/regular-expression.html"
+           data-tag="regex"
+           data-author="" >
+            <span class="post-title" title="正则表达式详解">正则表达式详解</span>
+            <span class="post-date" title="2018-10-04 09:41:40">2018/10/04</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/Linux-process-suspend-and-resume.html"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="Linux 的进程挂起和恢">Linux 的进程挂起和恢</span>
+            <span class="post-date" title="2018-09-25 11:56:11">2018/09/25</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-gogs-config.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git服务器之Gogs配置">Git服务器之Gogs配置</span>
+            <span class="post-date" title="2018-09-19 15:58:23">2018/09/19</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-gogs.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git服务器之Gogs搭建">Git服务器之Gogs搭建</span>
+            <span class="post-date" title="2018-09-19 15:58:23">2018/09/19</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/tools/git-reset-update.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git强制拉取">Git强制拉取</span>
+            <span class="post-date" title="2018-09-19 15:58:23">2018/09/19</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-CentOS-Yum-repo.html"
+           data-tag="Linux,Yum"
+           data-author="" >
+            <span class="post-title" title="CentOS更换Yum源">CentOS更换Yum源</span>
+            <span class="post-date" title="2018-09-18 11:51:28">2018/09/18</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php/JSON.html"
+           data-tag="PHP,JSON"
+           data-author="" >
+            <span class="post-title" title="PHP JSON">PHP JSON</span>
+            <span class="post-date" title="2018-09-18 11:51:28">2018/09/18</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-command.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git常用命令">Git常用命令</span>
+            <span class="post-date" title="2018-09-15 12:26:11">2018/09/15</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/Laravel-Batch-update-data.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 批量更新数据">Laravel 批量更新数据</span>
+            <span class="post-date" title="2018-09-11 11:57:23">2018/09/11</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/View-crontab-log-records.html"
+           data-tag="Linux,crontab"
+           data-author="" >
+            <span class="post-title" title="如何查看crontab的日志记录">如何查看crontab的日志记录</span>
+            <span class="post-date" title="2018-09-10 14:18:17">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/Linux-crontab-command.html"
+           data-tag="Linux,crontab"
+           data-author="" >
+            <span class="post-title" title="Linux crontab命令">Linux crontab命令</span>
+            <span class="post-date" title="2018-09-10 12:29:20">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/Laravel-log.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 的日志变得巨大，如何按照日期来切分日志？">Laravel 的日志变得巨大，如何按照日期来切分日志？</span>
+            <span class="post-date" title="2018-09-10 11:54:20">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/Laravel-request-change.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel Request对象的修改">Laravel Request对象的修改</span>
+            <span class="post-date" title="2018-09-10 11:54:20">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-redis-config.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 下配置 Redis 让缓存、Session 各自使用不同的 Redis 数据库">Laravel 下配置 Redis 让缓存、Session 各自使用不同的 Redis 数据库</span>
+            <span class="post-date" title="2018-09-10 11:47:54">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/crontab.html"
+           data-tag="Laravel,Linux"
+           data-author="" >
+            <span class="post-title" title="定时任务">定时任务</span>
+            <span class="post-date" title="2018-09-10 11:42:55">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-specification.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git版本管理规范">Git版本管理规范</span>
+            <span class="post-date" title="2018-09-10 11:42:55">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-key-config.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="一个客户端设置多个 github 账号">一个客户端设置多个 github 账号</span>
+            <span class="post-date" title="2018-09-10 11:42:55">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/Linux-login-prompt-modification.html"
+           data-tag="Linux,SSH"
+           data-author="" >
+            <span class="post-title" title="Linux登录提示修改">Linux登录提示修改</span>
+            <span class="post-date" title="2018-09-10 11:33:17">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/ssh-keygen.html"
+           data-tag="Linux,SSH,Git"
+           data-author="" >
+            <span class="post-title" title="ssh-keygen 基本用法">ssh-keygen 基本用法</span>
+            <span class="post-date" title="2018-09-10 10:58:37">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-iptables.html"
+           data-tag="Linux,iptables"
+           data-author="" >
+            <span class="post-title" title="linux 防火墙 iptables 配置">linux 防火墙 iptables 配置</span>
+            <span class="post-date" title="2018-09-10 10:53:55">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/Linux-login-prompt-modification.html"
+           data-tag="Linux,SSH"
+           data-author="" >
+            <span class="post-title" title="Linux SSH ROOT相关配置">Linux SSH ROOT相关配置</span>
+            <span class="post-date" title="2018-09-10 10:28:41">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-lunp-user-ini.html"
+           data-tag="lnmp"
+           data-author="" >
+            <span class="post-title" title="无法删除“.user.ini”文件解决方法">无法删除“.user.ini”文件解决方法</span>
+            <span class="post-date" title="2018-09-10 10:11:46">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php/php-ImageMagick&imagick.html"
+           data-tag="PHP,imagick,ImageMagick"
+           data-author="" >
+            <span class="post-title" title="ImageMagick安装和PHP imagick扩展">ImageMagick安装和PHP imagick扩展</span>
+            <span class="post-date" title="2018-09-04 10:12:44">2018/09/04</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php/php-ImageMagick-imagick.html"
+           data-tag="PHP,imagick"
+           data-author="" >
+            <span class="post-title" title="图片处理ImageMagick之PHP imagick扩展文档">图片处理ImageMagick之PHP imagick扩展文档</span>
+            <span class="post-date" title="2018-09-03 14:56:01">2018/09/03</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-database-seeder.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 数据库：填充">Laravel 数据库：填充</span>
+            <span class="post-date" title="2018-08-09 12:07:23">2018/08/09</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-database-migration-demo.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 数据库：迁移 Demo">Laravel 数据库：迁移 Demo</span>
+            <span class="post-date" title="2018-08-08 12:06:23">2018/08/08</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-database-migration.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 数据库：迁移">Laravel 数据库：迁移</span>
+            <span class="post-date" title="2018-08-08 12:06:23">2018/08/08</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/Basic-operation-of-docker.html"
+           data-tag="docker"
+           data-author="" >
+            <span class="post-title" title="整理记录 docker 基本操作使用">整理记录 docker 基本操作使用</span>
+            <span class="post-date" title="2007-03-30 15:36:06">2007/03/30</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-command.html"
+           data-tag="Laravel"
+           data-author="" >
+            <span class="post-title" title="Laravel 常用操作">Laravel 常用操作</span>
+            <span class="post-date" title="2000-03-06 20:42:10">2000/03/06</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-header.html"
+           data-tag="Laravel"
+           data-author="" >
+            <span class="post-title" title="Laravel 自定义助手函数">Laravel 自定义助手函数</span>
+            <span class="post-date" title="2000-03-06 20:42:10">2000/03/06</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-storage-link.html"
+           data-tag="Laravel"
+           data-author="" >
+            <span class="post-title" title="Laravel 软连接">Laravel 软连接</span>
+            <span class="post-date" title="2000-03-06 20:42:10">2000/03/06</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/Laravel-learning-materials-and-open-source-project.html"
+           data-tag="Laravel"
+           data-author="" >
+            <span class="post-title" title="Laravel 学习资料和开源项目">Laravel 学习资料和开源项目</span>
+            <span class="post-date" title="2000-03-06 20:42:10">2000/03/06</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-linux/linux-base" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">linux bash 命令入门</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Linux">Linux</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">Linux</a>
+            
+            <a class="color5">bash</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2020-07-11 01:26:24'>2019-11-11 13:32</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-text">目录</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">1. 基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#a-export"><span class="toc-text">a. export</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#b-whatis"><span class="toc-text">b. whatis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#c-whereis"><span class="toc-text">c. whereis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#d-which"><span class="toc-text">d. which</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#e-clear"><span class="toc-text">e. clear</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="toc-text">1.1. 文件操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#a-cat"><span class="toc-text">a. cat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#b-chmod"><span class="toc-text">b. chmod</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#c-chown"><span class="toc-text">c. chown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#d-cp"><span class="toc-text">d. cp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#e-diff"><span class="toc-text">e. diff</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#f-file"><span class="toc-text">f. file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#g-find"><span class="toc-text">g. find</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#h-gunzip"><span class="toc-text">h. gunzip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#i-gzcat"><span class="toc-text">i. gzcat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#j-gzip"><span class="toc-text">j. gzip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#k-head"><span class="toc-text">k. head</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#l-lpq"><span class="toc-text">l. lpq</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#m-lpr"><span class="toc-text">m. lpr</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#n-lprm"><span class="toc-text">n. lprm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#o-ls"><span class="toc-text">o. ls</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#p-more"><span class="toc-text">p. more</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#q-mv"><span class="toc-text">q. mv</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#r-rm"><span class="toc-text">r. rm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#s-tail"><span class="toc-text">s. tail</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#t-touch"><span class="toc-text">t. touch</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">1.2. 文本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#a-awk"><span class="toc-text">a. awk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#b-cut"><span class="toc-text">b. cut</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#c-echo"><span class="toc-text">c. echo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#d-egrep"><span class="toc-text">d. egrep</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#e-fgrep"><span class="toc-text">e. fgrep</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#f-fmt"><span class="toc-text">f. fmt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#g-grep"><span class="toc-text">g. grep</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#h-nl"><span class="toc-text">h. nl</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#i-sed"><span class="toc-text">i. sed</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#j-sort"><span class="toc-text">j. sort</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#k-tr"><span class="toc-text">k. tr</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#l-uniq"><span class="toc-text">l. uniq</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#m-wc"><span class="toc-text">m. wc</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E6%96%87%E4%BB%B6%E5%A4%B9%E6%93%8D%E4%BD%9C"><span class="toc-text">1.3. 文件夹操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#a-cd"><span class="toc-text">a. cd</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#b-mkdir"><span class="toc-text">b. mkdir</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#c-pwd"><span class="toc-text">c. pwd</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-SSH%E3%80%81%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C"><span class="toc-text">1.4. SSH、系统信息及网络操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#a-bg"><span class="toc-text">a. bg</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#b-cal"><span class="toc-text">b. cal</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#c-date"><span class="toc-text">c. date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#d-df"><span class="toc-text">d. df</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#e-dig"><span class="toc-text">e. dig</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#f-du"><span class="toc-text">f. du</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#g-fg"><span class="toc-text">g. fg</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#h-finger"><span class="toc-text">h. finger</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#i-jobs"><span class="toc-text">i. jobs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#j-last"><span class="toc-text">j. last</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#k-man"><span class="toc-text">k. man</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#l-passwd"><span class="toc-text">l. passwd</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#m-ping"><span class="toc-text">m. ping</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#n-ps"><span class="toc-text">n. ps</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#o-quota"><span class="toc-text">o. quota</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#p-scp"><span class="toc-text">p. scp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#q-ssh"><span class="toc-text">q. ssh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#r-top"><span class="toc-text">r. top</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#s-uname"><span class="toc-text">s. uname</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#t-uptime"><span class="toc-text">t. uptime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u-w"><span class="toc-text">u. w</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-wget"><span class="toc-text">v. wget</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#w-whoami"><span class="toc-text">w. whoami</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x-whois"><span class="toc-text">x. whois</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5-%E8%BF%9B%E7%A8%8B%E7%9B%91%E6%8E%A7%E6%93%8D%E4%BD%9C"><span class="toc-text">1.5. 进程监控操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#a-kill"><span class="toc-text">a. kill</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#b-killall"><span class="toc-text">b. killall</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#c-amp"><span class="toc-text">c. &amp;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#d-nohup"><span class="toc-text">d. nohup</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%9F%BA%E7%A1%80-Shell-%E7%BC%96%E7%A8%8B"><span class="toc-text">2. 基础 Shell 编程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E5%8F%98%E9%87%8F"><span class="toc-text">2.1. 变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E6%95%B0%E7%BB%84"><span class="toc-text">2.2. 数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%9B%BF%E6%8D%A2"><span class="toc-text">2.3 字符串替换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-%E5%87%BD%E6%95%B0"><span class="toc-text">2.4. 函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="toc-text">2.5. 条件语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-%E5%BE%AA%E7%8E%AF"><span class="toc-text">2.6. 循环</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%8A%80%E5%B7%A7"><span class="toc-text">3. 技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%88%AB%E5%90%8D"><span class="toc-text">设置别名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E8%B7%B3%E8%BD%AC%E5%88%B0%E6%8C%87%E5%AE%9A%E7%9B%AE%E5%BD%95"><span class="toc-text">快速跳转到指定目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%B3%E5%87%BA%E9%99%B7%E9%98%B1"><span class="toc-text">跳出陷阱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%9D%E5%AD%98%E4%BD%A0%E7%9A%84%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">保存你的环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BF%E9%97%AE%E4%BD%A0%E7%9A%84%E8%84%9A%E6%9C%AC"><span class="toc-text">访问你的脚本</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E8%B0%83%E8%AF%95"><span class="toc-text">4. 调试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%A1%E7%8C%AE"><span class="toc-text">贡献</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BF%BB%E8%AF%91%E7%89%88%E6%9C%AC"><span class="toc-text">翻译版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE"><span class="toc-text">授权协议</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/2059754/24601246/753a7f36-1858-11e7-9d6b-7a0e64fb27f7.png" alt="bash logo"/>
+</p>
+
+<blockquote>
+<p>Fork 自 <a target="_blank" rel="noopener" href="https://github.com/Idnan/bash-guide">Idnan/bash-guide</a>，由 <a target="_blank" rel="noopener" href="https://raoyc.com/">raoyc</a> 翻译为简体中文版，仅供参考学习使用，不可商用。</p>
+</blockquote>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol>
+<li><a href="#1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C">基本操作</a>      1.1. <a href="#11-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C">文件操作</a>      1.2. <a href="#12-%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C">文本操作</a>      1.3. <a href="#13-%E6%96%87%E4%BB%B6%E5%A4%B9%E6%93%8D%E4%BD%9C">文件夹操作</a>      1.4. <a href="#14-ssh%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C">SSH、系统信息及网络操作</a>      1.5. <a href="#15-%E8%BF%9B%E7%A8%8B%E7%9B%91%E6%8E%A7%E6%93%8D%E4%BD%9C">进程监控操作</a></li>
+<li><a href="#2-%E5%9F%BA%E7%A1%80-shell-%E7%BC%96%E7%A8%8B">基础Shell编程</a>      2.1. <a href="#21-%E5%8F%98%E9%87%8F">变量</a>      2.2. <a href="#22-%E6%95%B0%E7%BB%84">数组</a>      2.3. <a href="#23-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%9B%BF%E6%8D%A2">字符串替换</a>      2.4. <a href="#24-%E5%87%BD%E6%95%B0">函数</a>      2.5. <a href="#25-%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5">条件语句</a>      2.6. <a href="#26-%E5%BE%AA%E7%8E%AF">循环</a>  </li>
+<li><a href="#3-%E6%8A%80%E5%B7%A7">技巧</a>  </li>
+<li><a href="#4-%E8%B0%83%E8%AF%95">调试</a>  </li>
+</ol>
+<h1 id="1-基本操作"><a href="#1-基本操作" class="headerlink" title="1. 基本操作"></a>1. 基本操作</h1><h3 id="a-export"><a href="#a-export" class="headerlink" title="a. export"></a>a. <code>export</code></h3><p>显示所有环境变量。如果你想获取某个特定（环境）变量详情值，请使用 <code>echo $VARIABLE_NAME</code> 。  </p>
+<pre><code class="bash">export
+</code></pre>
+<p>示例:</p>
+<pre><code class="bash">$ export
+AWS_HOME=/Users/adnanadnan/.aws
+LANG=en_US.UTF-8
+LC_CTYPE=en_US.UTF-8
+LESS=-R
+
+$ echo $AWS_HOME
+/Users/adnanadnan/.aws
+</code></pre>
+<h3 id="b-whatis"><a href="#b-whatis" class="headerlink" title="b. whatis"></a>b. <code>whatis</code></h3><p>whatis 显示用户命令、系统调用、类库功能等在手册中描述。  </p>
+<pre><code class="bash">whatis something
+</code></pre>
+<p>示例:</p>
+<pre><code class="bash">$ whatis bash
+bash (1)             - GNU Bourne-Again SHell
+</code></pre>
+<h3 id="c-whereis"><a href="#c-whereis" class="headerlink" title="c. whereis"></a>c. <code>whereis</code></h3><p>whereis 通过系统自动建立的索引库来检索可执行程序、源代码文件以及手册页面。  </p>
+<pre><code class="bash">whereis name
+</code></pre>
+<p>示例:</p>
+<pre><code class="bash">$ whereis php
+/usr/bin/php
+</code></pre>
+<h3 id="d-which"><a href="#d-which" class="headerlink" title="d. which"></a>d. <code>which</code></h3><p>which 检索环境变量 <code>PATH</code> 所限定目录下的可执行文件。此命令会打印可执行文件完整路径。  </p>
+<pre><code class="bash">which program_name 
+</code></pre>
+<p>示例:</p>
+<pre><code class="bash">$ which php
+/c/xampp/php/php
+</code></pre>
+<h3 id="e-clear"><a href="#e-clear" class="headerlink" title="e. clear"></a>e. clear</h3><p>清除终端窗体所有内容。</p>
+<h2 id="1-1-文件操作"><a href="#1-1-文件操作" class="headerlink" title="1.1. 文件操作"></a>1.1. 文件操作</h2><table>
+   <tr>
+      <td><a href="#a-cat">cat</a></td>
+      <td><a href="#b-chmod">chmod</a></td>
+      <td><a href="#c-chown">chown</a></td>
+      <td><a href="#d-cp">cp</a></td>
+      <td><a href="#e-diff">diff</a></td>
+      <td><a href="#f-file">file</a></td>
+      <td><a href="#g-find">find</a></td>
+      <td><a href="#h-gunzip">gunzip</a></td>
+      <td><a href="#i-gzcat">gzcat</a></td>
+      <td><a href="#j-gzip">gzip</a></td>
+      <td><a href="#k-head">head</a></td>
+   </tr>
+   <tr>
+      <td><a href="#l-lpq">lpq</a></td>
+      <td><a href="#m-lpr">lpr</a></td>
+      <td><a href="#n-lprm">lprm</a></td>
+      <td><a href="#o-ls">ls</a></td>
+      <td><a href="#p-more">more</a></td>
+      <td><a href="#q-mv">mv</a></td>
+      <td><a href="#r-rm">rm</a></td>
+      <td><a href="#s-tail">tail</a></td>
+      <td><a href="#t-touch">touch</a></td>
+   </tr>
+</table>
+
+<h3 id="a-cat"><a href="#a-cat" class="headerlink" title="a. cat"></a>a. <code>cat</code></h3><p>在 UNIX 或 Linux 下，它可以用于以下场景：  </p>
+<ul>
+<li>在屏幕上显示文本文件</li>
+<li>复制文本文件</li>
+<li>合并文本文件</li>
+<li>创建新的文本文件<pre><code class="bash">cat filename
+cat file1 file2 
+cat file1 file2 &gt; newcombinedfile
+</code></pre>
+</li>
+</ul>
+<h3 id="b-chmod"><a href="#b-chmod" class="headerlink" title="b. chmod"></a>b. <code>chmod</code></h3><p>chmod 是 “change mode” (改变模式）的意思，它允许你改变文件读、写和可执行等权限。 关于此命令的详细信息请参考此<a target="_blank" rel="noopener" href="https://ss64.com/bash/chmod.html">链接</a>。</p>
+<pre><code class="bash">chmod -options filename
+</code></pre>
+<h3 id="c-chown"><a href="#c-chown" class="headerlink" title="c. chown"></a>c. <code>chown</code></h3><p>chown 是 “change owner” （更改所有者）的意思, 它允许你改变一个文件或文件夹的所有者，所有者可以是个用户或用户组。常见的用法是使用冒号来分隔，前面是用户，后面接着用户组。</p>
+<pre><code class="bash">chown -options user:group filename
+</code></pre>
+<h3 id="d-cp"><a href="#d-cp" class="headerlink" title="d. cp"></a>d. <code>cp</code></h3><p>把文件从一个位置复制到另一个位置。  </p>
+<pre><code class="bash">cp filename1 filename2
+</code></pre>
+<p>这里的 <code>filename1</code> 是原始文件路径，<code>filename2</code> 是目标文件路径。</p>
+<h3 id="e-diff"><a href="#e-diff" class="headerlink" title="e. diff"></a>e. <code>diff</code></h3><p>比较文件并列出他们的不同。  </p>
+<pre><code class="bash">diff filename1 filename2
+</code></pre>
+<h3 id="f-file"><a href="#f-file" class="headerlink" title="f. file"></a>f. <code>file</code></h3><p>侦测文件类型。  </p>
+<pre><code class="bash">file filename
+</code></pre>
+<p>示例:</p>
+<pre><code class="bash">$ file index.html
+ index.html: HTML document, ASCII text
+</code></pre>
+<h3 id="g-find"><a href="#g-find" class="headerlink" title="g. find"></a>g. <code>find</code></h3><p>在特定目录下查找文件。  </p>
+<pre><code class="bash">find directory options pattern
+</code></pre>
+<p>示例:</p>
+<pre><code class="bash">$ find . -name README.md
+$ find /home/user1 -name &#39;*.png&#39;
+</code></pre>
+<h3 id="h-gunzip"><a href="#h-gunzip" class="headerlink" title="h. gunzip"></a>h. <code>gunzip</code></h3><p>解压缩由 gzip 压缩过的文件。  </p>
+<pre><code class="bash">gunzip filename
+</code></pre>
+<h3 id="i-gzcat"><a href="#i-gzcat" class="headerlink" title="i. gzcat"></a>i. <code>gzcat</code></h3><p>可让你免解压直接查看经 <code>gzip</code> 压缩过的文件。  </p>
+<pre><code class="bash">gzcat filename
+</code></pre>
+<h3 id="j-gzip"><a href="#j-gzip" class="headerlink" title="j. gzip"></a>j. <code>gzip</code></h3><p>压缩文件。  </p>
+<pre><code class="bash">gzip filename
+</code></pre>
+<h3 id="k-head"><a href="#k-head" class="headerlink" title="k. head"></a>k. <code>head</code></h3><p>输出文件前10行内容。  </p>
+<pre><code class="bash">head filename
+</code></pre>
+<h3 id="l-lpq"><a href="#l-lpq" class="headerlink" title="l. lpq"></a>l. <code>lpq</code></h3><p>查看打印队列状态。  </p>
+<pre><code class="bash">lpq
+</code></pre>
+<p>示例:</p>
+<pre><code class="bash">$ lpq
+Rank    Owner   Job     File(s)                         Total Size
+active  adnanad 59      demo                            399360 bytes
+1st     adnanad 60      (stdin)                         0 bytes
+</code></pre>
+<h3 id="m-lpr"><a href="#m-lpr" class="headerlink" title="m. lpr"></a>m. <code>lpr</code></h3><p>打印文件。  </p>
+<pre><code class="bash">lpr filename
+</code></pre>
+<h3 id="n-lprm"><a href="#n-lprm" class="headerlink" title="n. lprm"></a>n. <code>lprm</code></h3><p>从打印队列中移除某个任务。  </p>
+<pre><code class="bash">lprm jobnumber
+</code></pre>
+<h3 id="o-ls"><a href="#o-ls" class="headerlink" title="o. ls"></a>o. <code>ls</code></h3><p>列出文件。 <code>ls</code> 拥有诸多选项： <code>-l</code> 以列表方式列出文件 （包含文件大小，文件所属用户组，文件权限及其最后更新时间等）； <code>-a</code> 列出所有文件，包括隐藏文件。关于这个命令的更多信息请查阅此 <a target="_blank" rel="noopener" href="https://ss64.com/bash/ls.html">外链</a> 。  </p>
+<pre><code class="bash">ls option
+</code></pre>
+<p>示例:</p>
+<pre>
+$ ls -la
+rwxr-xr-x   33 adnan  staff    1122 Mar 27 18:44 .
+drwxrwxrwx  60 adnan  staff    2040 Mar 21 15:06 ..
+-rw-r--r--@  1 adnan  staff   14340 Mar 23 15:05 .DS_Store
+-rw-r--r--   1 adnan  staff     157 Mar 25 18:08 .bumpversion.cfg
+-rw-r--r--   1 adnan  staff    6515 Mar 25 18:08 .config.ini
+-rw-r--r--   1 adnan  staff    5805 Mar 27 18:44 .config.override.ini
+drwxr-xr-x  17 adnan  staff     578 Mar 27 23:36 .git
+-rwxr-xr-x   1 adnan  staff    2702 Mar 25 18:08 .gitignore
+</pre>
+
+<h3 id="p-more"><a href="#p-more" class="headerlink" title="p. more"></a>p. <code>more</code></h3><p>展示文件的开头部分（通过敲击空格键移动以及 <code>q</code> 键退出）。  </p>
+<pre><code class="bash">more filename
+</code></pre>
+<h3 id="q-mv"><a href="#q-mv" class="headerlink" title="q. mv"></a>q. <code>mv</code></h3><p>将文件从一个位置移动到另一个位置。  </p>
+<pre><code class="bash">mv filename1 filename2
+</code></pre>
+<p>这里的 <code>filename1</code> 是原始文件路径，<code>filename2</code> 是目标文件路径。</p>
+<p>此外它也可用于重命名一个文件。  </p>
+<pre><code class="bash">mv old_name new_name
+</code></pre>
+<h3 id="r-rm"><a href="#r-rm" class="headerlink" title="r. rm"></a>r. <code>rm</code></h3><p>移除某个文件。对一个目录使用此命令会爆出一个错误。<br><code>rm: directory: is a directory</code><br>要删除一个目录，请传入 <code>-r</code> 参数，它将递归性删除该目录下所有内容。可选地你也使用 <code>-f</code> 标志位强制删除，也就是不经过任何确定提示等。  </p>
+<pre><code class="bash">rm filename
+</code></pre>
+<h3 id="s-tail"><a href="#s-tail" class="headerlink" title="s. tail"></a>s. <code>tail</code></h3><p>输出文件末尾10行内容。使用 <code>-f</code> 选项可输出正在被写入文件中的数据。  </p>
+<pre><code class="bash">tail filename
+</code></pre>
+<h3 id="t-touch"><a href="#t-touch" class="headerlink" title="t. touch"></a>t. <code>touch</code></h3><p>创建或更新你的文件。  </p>
+<pre><code class="bash">touch filename
+</code></pre>
+<p>示例:</p>
+<pre><code class="bash">$ touch trick.md
+</code></pre>
+<h2 id="1-2-文本操作"><a href="#1-2-文本操作" class="headerlink" title="1.2. 文本操作"></a>1.2. 文本操作</h2><table>
+    <tr>
+      <td><a href="#a-awk">awk</a></td>
+      <td><a href="#b-cut">cut</a></td>
+      <td><a href="#c-echo">echo</a></td>
+      <td><a href="#d-egrep">egrep</a></td>
+      <td><a href="#e-fgrep">fgrep</a></td>
+      <td><a href="#f-fmt">fmt</a></td>
+      <td><a href="#g-grep">grep</a></td>
+      <td><a href="#h-nl">nl</a></td>
+      <td><a href="#i-sed">sed</a></td>
+      <td><a href="#j-sort">sort</a></td>
+   </tr>
+   <tr>
+      <td><a href="#k-tr">tr</a></td>
+      <td><a href="#l-uniq">uniq</a></td>
+      <td><a href="#m-wc">wc</a></td>
+   </tr>
+</table>
+
+<h3 id="a-awk"><a href="#a-awk" class="headerlink" title="a. awk"></a>a. <code>awk</code></h3><p>awk 最佳的文本文件处理工具。它可以逐行处理整个文件。默认情况下，它使用空白符去切分为片段。awk 最常用的句法命令是：</p>
+<pre><code class="bash">awk &#39;/search_pattern/ &#123; action_to_take_if_pattern_matches; &#125;&#39; file_to_parse
+</code></pre>
+<p>让我们来看看下面 <code>/etc/passwd</code> 文件。这里是此文件中包含的样本数据：  </p>
+<pre><code>root:x:0:0:root:/root:/usr/bin/zsh
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+</code></pre>
+<p>那么现在让我们从这个文件获取用户名。这里的 <code>-F</code> 指定我们想要字符串切分的分隔符，在本例中是 <code>:</code> 。 <code>&#123; print $1 &#125;</code> 表示打印出第一个匹配到的字符片段。</p>
+<pre><code class="bash">awk -F&#39;:&#39; &#39;&#123; print $1 &#125;&#39; /etc/passwd
+</code></pre>
+<p>执行完上述命令后，你将得到下面输出：</p>
+<pre><code>root
+daemon
+bin
+sys
+sync
+</code></pre>
+<p>关于 <code>awk</code> 使用的更多信息请查阅此 <a target="_blank" rel="noopener" href="https://www.cyberciti.biz/faq/bash-scripting-using-awk">外链</a> 。</p>
+<h3 id="b-cut"><a href="#b-cut" class="headerlink" title="b. cut"></a>b. <code>cut</code></h3><p>移除文件每行某些节内容。</p>
+<p><em>example.txt</em></p>
+<pre><code class="bash">red riding hood went to the park to play
+</code></pre>
+<p><em>以空格符为分隔符，显示第2、7和9节</em></p>
+<pre><code class="bash">cut -d &quot; &quot; -f2,7,9 example.txt
+</code></pre>
+<pre><code class="bash">riding park play
+</code></pre>
+<h3 id="c-echo"><a href="#c-echo" class="headerlink" title="c. echo"></a>c. <code>echo</code></h3><p>输出一行文字。</p>
+<p><em>显示 “Hello World”</em></p>
+<pre><code class="bash">echo Hello World
+</code></pre>
+<pre><code class="bash">Hello World
+</code></pre>
+<p><em>单词间以新行方式显示 “Hello World”</em></p>
+<pre><code class="bash">echo -ne &quot;Hello\nWorld\n&quot;
+</code></pre>
+<pre><code class="bash">Hello
+World
+</code></pre>
+<h3 id="d-egrep"><a href="#d-egrep" class="headerlink" title="d. egrep"></a>d. <code>egrep</code></h3><p>打印出文件中匹配模式的行 - 扩展表达式  (视为 ‘grep -E’ 的别名)</p>
+<blockquote>
+<p>译者注：<code>egrep</code> 可以使用基本的正则表达外, 还可以用扩展表达式。</p>
+</blockquote>
+<p><em>example.txt</em></p>
+<pre><code class="bash">Lorem ipsum
+dolor sit amet, 
+consetetur
+sadipscing elitr,
+sed diam nonumy
+eirmod tempor
+invidunt ut labore
+et dolore magna
+aliquyam erat, sed
+diam voluptua. At
+vero eos et
+accusam et justo
+duo dolores et ea
+rebum. Stet clita
+kasd gubergren,
+no sea takimata
+sanctus est Lorem
+ipsum dolor sit
+amet.
+</code></pre>
+<p><em>显示文件中包含 ‘Lorem’ 或 ‘dolor’ 的行</em></p>
+<pre><code class="bash">egrep &#39;(Lorem|dolor)&#39; example.txt
+or
+grep -E &#39;(Lorem|dolor)&#39; example.txt
+</code></pre>
+<pre><code class="bash">Lorem ipsum
+dolor sit amet,
+et dolore magna
+duo dolores et ea
+sanctus est Lorem
+ipsum dolor sit
+</code></pre>
+<h3 id="e-fgrep"><a href="#e-fgrep" class="headerlink" title="e. fgrep"></a>e. <code>fgrep</code></h3><p>打印出文件中匹配模式的行 - 固化模式匹配  (视为 ‘grep -F’ 的别名)</p>
+<blockquote>
+<p>  译者注：<code>fgrep</code> 指定的模式将不被认做正则表达式，而是确切的没有转义含义的字符串。</p>
+</blockquote>
+<p><em>example.txt</em></p>
+<pre><code class="bash">Lorem ipsum
+dolor sit amet,
+consetetur
+sadipscing elitr,
+sed diam nonumy
+eirmod tempor
+foo (Lorem|dolor) 
+invidunt ut labore
+et dolore magna
+aliquyam erat, sed
+diam voluptua. At
+vero eos et
+accusam et justo
+duo dolores et ea
+rebum. Stet clita
+kasd gubergren,
+no sea takimata
+sanctus est Lorem
+ipsum dolor sit
+amet.
+</code></pre>
+<p><em>在 example.txt 文件中找到确切的 ‘(Lorem|dolor)’ 字符串</em></p>
+<pre><code class="bash">fgrep &#39;(Lorem|dolor)&#39; example.txt
+or
+grep -F &#39;(Lorem|dolor)&#39; example.txt
+</code></pre>
+<pre><code class="bash">foo (Lorem|dolor) 
+</code></pre>
+<h3 id="f-fmt"><a href="#f-fmt" class="headerlink" title="f. fmt"></a>f. <code>fmt</code></h3><p>简单的文本格式化器。</p>
+<p><em>example: example.txt (1 行)</em></p>
+<pre><code class="bash">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</code></pre>
+<p><em>将 example.txt 格式化输出为20字符行宽</em></p>
+<pre><code class="bash">cat example.txt | fmt -w 20
+</code></pre>
+<pre><code class="bash">Lorem ipsum
+dolor sit amet,
+consetetur
+sadipscing elitr,
+sed diam nonumy
+eirmod tempor
+invidunt ut labore
+et dolore magna
+aliquyam erat, sed
+diam voluptua. At
+vero eos et
+accusam et justo
+duo dolores et ea
+rebum. Stet clita
+kasd gubergren,
+no sea takimata
+sanctus est Lorem
+ipsum dolor sit
+amet.
+</code></pre>
+<h3 id="g-grep"><a href="#g-grep" class="headerlink" title="g. grep"></a>g. <code>grep</code></h3><p>在文件中查找文本。你可以使用 grep 命令去查找匹配一个或多个正则表达式的文本行，然后输出匹配的结果行。 </p>
+<pre><code class="bash">grep pattern filename
+</code></pre>
+<p>示例：</p>
+<pre><code class="bash">$ grep admin /etc/passwd
+_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false
+_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false
+_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false
+</code></pre>
+<p>你也可以通过 <code>-i</code> 选项参数强制 grep 忽略大小写；<code>-r</code> 可被用来递归地查找指定目录下所有的文件。例如： </p>
+<pre><code class="bash">$ grep -r admin /etc/
+</code></pre>
+<p>参数 <code>-w</code> 限定只查找单词。关于 <code>grep</code> 命令的更多帮助信息，请查阅此<a target="_blank" rel="noopener" href="https://www.cyberciti.biz/faq/grep-in-bash">外链</a>。</p>
+<h3 id="h-nl"><a href="#h-nl" class="headerlink" title="h. nl"></a>h. <code>nl</code></h3><p>（显示）文件行号。</p>
+<p><em>example.txt</em></p>
+<pre><code class="bash">Lorem ipsum
+dolor sit amet,
+consetetur
+sadipscing elitr,
+sed diam nonumy
+eirmod tempor
+invidunt ut labore
+et dolore magna
+aliquyam erat, sed
+diam voluptua. At
+vero eos et
+accusam et justo
+duo dolores et ea
+rebum. Stet clita
+kasd gubergren,
+no sea takimata
+sanctus est Lorem
+ipsum dolor sit
+amet.
+</code></pre>
+<p><em>带行号显示 example.txt</em></p>
+<pre><code class="bash">nl -s&quot;. &quot; example.txt 
+</code></pre>
+<pre><code class="bash">     1. Lorem ipsum
+     2. dolor sit amet,
+     3. consetetur
+     4. sadipscing elitr,
+     5. sed diam nonumy
+     6. eirmod tempor
+     7. invidunt ut labore
+     8. et dolore magna
+     9. aliquyam erat, sed
+    10. diam voluptua. At
+    11. vero eos et
+    12. accusam et justo
+    13. duo dolores et ea
+    14. rebum. Stet clita
+    15. kasd gubergren,
+    16. no sea takimata
+    17. sanctus est Lorem
+    18. ipsum dolor sit
+    19. amet.
+</code></pre>
+<h3 id="i-sed"><a href="#i-sed" class="headerlink" title="i. sed"></a>i. <code>sed</code></h3><p>流式编辑器用于过滤与转换文本。</p>
+<p><em>example.txt</em></p>
+<pre><code class="bash">Hello This is a Test 1 2 3 4
+</code></pre>
+<p><em>替换所有空格为连字符</em></p>
+<pre><code class="bash">sed &#39;s/ /-/g&#39; example.txt
+</code></pre>
+<pre><code class="bash">Hello-This-is-a-Test-1-2-3-4
+</code></pre>
+<p><em>替换所有数字为字符 “d”</em></p>
+<pre><code class="bash">sed &#39;s/[0-9]/d/g&#39; example.txt
+</code></pre>
+<pre><code class="bash">Hello This is a Test d d d d
+</code></pre>
+<h3 id="j-sort"><a href="#j-sort" class="headerlink" title="j. sort"></a>j. <code>sort</code></h3><p>对文件行进行排序。</p>
+<p><em>example.txt</em></p>
+<pre><code class="bash">f
+b
+c
+g
+a
+e
+d
+</code></pre>
+<p>*对 example.txt （译者注：按字母序）排序 *</p>
+<pre><code class="bash">sort example.txt
+</code></pre>
+<pre><code class="bash">a
+b
+c
+d
+e
+f
+g
+</code></pre>
+<p>*对 example.txt 随机排序 *</p>
+<pre><code class="bash">sort example.txt | sort -R
+</code></pre>
+<pre><code class="bash">b
+f
+a
+c
+d
+g
+e
+</code></pre>
+<h3 id="k-tr"><a href="#k-tr" class="headerlink" title="k. tr"></a>k. <code>tr</code></h3><p>转换或删除字符</p>
+<p><em>example.txt</em></p>
+<pre><code class="bash">Hello World Foo Bar Baz!
+</code></pre>
+<p><em>把所有小写字母转换成大写形式</em></p>
+<pre><code class="bash">cat example.txt | tr &#39;a-z&#39; &#39;A-Z&#39; 
+</code></pre>
+<pre><code class="bash">HELLO WORLD FOO BAR BAZ!
+</code></pre>
+<p><em>把所有空格转换为新行</em></p>
+<pre><code class="bash">cat example.txt | tr &#39; &#39; &#39;\n&#39;
+</code></pre>
+<pre><code class="bash">Hello
+World
+Foo
+Bar
+Baz!
+</code></pre>
+<h3 id="l-uniq"><a href="#l-uniq" class="headerlink" title="l. uniq"></a>l. <code>uniq</code></h3><p>汇报或删除重复的行</p>
+<p><em>example.txt</em></p>
+<pre><code class="bash">a
+a
+b
+a
+b
+c
+d
+c
+</code></pre>
+<p><em>显示 example.txt 中所有不重复的行 (首先你需要排序，否则部分相同行会被忽略)</em></p>
+<pre><code class="bash">sort example.txt | uniq
+</code></pre>
+<pre><code class="bash">a
+b
+c
+d
+</code></pre>
+<p><em>显示去重后的所有唯一项，并标注原始文件中该项出现的次数</em></p>
+<pre><code class="bash">sort example.txt | uniq -c
+</code></pre>
+<pre><code class="bash">    3 a
+    2 b
+    2 c
+    1 d
+</code></pre>
+<h3 id="m-wc"><a href="#m-wc" class="headerlink" title="m. wc"></a>m. <code>wc</code></h3><p>告知你该文件的行数、词数（译者注：原文此处为 <code>words</code> ，对应英文来说，单词间一般以空白符或标点符分隔，一个单词算一个，但对于中文，一个不带空白符与标点符的长句仍算一个）与字节数（译者注：原文此处为 <code>characters</code> 应理解为字节数而非字符数）。 </p>
+<pre><code class="bash">wc filename
+</code></pre>
+<p>示例：</p>
+<pre><code class="bash">$ wc demo.txt
+7459   15915  398400 demo.txt
+</code></pre>
+<p>这里，<code>7459</code> 是行数， <code>15915</code> 是词数以及 <code>398400</code> 是字节数。</p>
+<h2 id="1-3-文件夹操作"><a href="#1-3-文件夹操作" class="headerlink" title="1.3. 文件夹操作"></a>1.3. 文件夹操作</h2><table>
+   <tr>
+      <td><a href="#a-cd">cd</a></td>
+      <td><a href="#b-mkdir">mkdir</a></td>
+      <td><a href="#c-pwd">pwd</a></td>
+   </tr>
+</table>
+
+<h3 id="a-cd"><a href="#a-cd" class="headerlink" title="a. cd"></a>a. <code>cd</code></h3><p>从一个目录跳转到另一个目录。执行下面命令会让你跳转到用户主目录。</p>
+<pre><code class="bash">$ cd
+</code></pre>
+<p>此命令接受一个可选的 <code>dirname</code> 参数，指向你想进入到的目录。</p>
+<pre><code class="bash">cd dirname
+</code></pre>
+<h3 id="b-mkdir"><a href="#b-mkdir" class="headerlink" title="b. mkdir"></a>b. <code>mkdir</code></h3><p>创建一个新的文件夹。  </p>
+<pre><code class="bash">mkdir dirname
+</code></pre>
+<h3 id="c-pwd"><a href="#c-pwd" class="headerlink" title="c. pwd"></a>c. <code>pwd</code></h3><p>显示你当前所在目录的路径。</p>
+<pre><code class="bash">pwd
+</code></pre>
+<h2 id="1-4-SSH、系统信息及网络操作"><a href="#1-4-SSH、系统信息及网络操作" class="headerlink" title="1.4. SSH、系统信息及网络操作"></a>1.4. SSH、系统信息及网络操作</h2><table>
+   <tr>
+      <td><a href="#a-bg">bg</a></td>
+      <td><a href="#b-cal">cal</a></td>
+      <td><a href="#c-date">date</a></td>
+      <td><a href="#d-df">df</a></td>
+      <td><a href="#e-dig">dig</a></td>
+      <td><a href="#f-du">du</a></td>
+      <td><a href="#g-fg">fg</a></td>
+      <td><a href="#h-finger">finger</a></td>   
+      <td><a href="#i-jobs">jobs</a></td>
+      <td><a href="#j-last">last</a></td>
+   </tr>
+   <tr>
+      <td><a href="#k-man">man</a></td>
+      <td><a href="#l-passwd">passwd</a></td>
+      <td><a href="#m-ping">ping</a></td>
+      <td><a href="#n-ps">ps</a></td>
+      <td><a href="#o-quota">quota</a></td>
+      <td><a href="#p-scp">scp</a></td>
+      <td><a href="#q-ssh">ssh</a></td>
+      <td><a href="#r-top">top</a></td>
+      <td><a href="#s-uname">uname</a></td>
+      <td><a href="#t-uptime">uptime</a></td>
+   </tr>
+   <tr>
+      <td><a href="#u-w">w</a></td>
+      <td><a href="#v-wget">wget</a></td>
+      <td><a href="#w-whoami">whoami</a></td>
+      <td><a href="#x-whois">whois</a></td>
+   </tr>
+</table>
+
+<h3 id="a-bg"><a href="#a-bg" class="headerlink" title="a. bg"></a>a. <code>bg</code></h3><p>列出所有被停止或后台运行的任务，或恢复一个已停止的任务到后台运行。</p>
+<h3 id="b-cal"><a href="#b-cal" class="headerlink" title="b. cal"></a>b. <code>cal</code></h3><p>显示当前月月历。</p>
+<h3 id="c-date"><a href="#c-date" class="headerlink" title="c. date"></a>c. <code>date</code></h3><p>显示当前日期与实际。</p>
+<h3 id="d-df"><a href="#d-df" class="headerlink" title="d. df"></a>d. <code>df</code></h3><p>显示磁盘使用情况。</p>
+<h3 id="e-dig"><a href="#e-dig" class="headerlink" title="e. dig"></a>e. <code>dig</code></h3><p>获取域名 DNS 解析相关信息。</p>
+<pre><code class="bash">dig domain
+</code></pre>
+<h3 id="f-du"><a href="#f-du" class="headerlink" title="f. du"></a>f. <code>du</code></h3><p>显示文件或目录的磁盘使用情况。关于此命令的更新信息，请查阅此<a target="_blank" rel="noopener" href="http://www.linfo.org/du.html">外链</a>。</p>
+<pre><code class="bash">du [option] [filename|directory]
+</code></pre>
+<p>选项:</p>
+<ul>
+<li><code>-h</code> (人类可读的) 把结果以 K、M、G（译者注：<code>K/M/G</code> 为磁盘占用空间大小的单位，<code>1G = 1024M</code> , <code>1M = 1024K</code> , <code>1K = 1024B</code> ，<code>1B = 8bit</code> ，其中 <code>B</code> 表示字节，<code>bit</code> 表示位）为单位输出。</li>
+<li><code>-s</code> (压缩或总结) 输出该目录总的磁盘空间及其子目录总结性的报告。</li>
+</ul>
+<p>示例:</p>
+<pre><code class="bash">du -sh pictures
+1.4M pictures
+</code></pre>
+<h3 id="g-fg"><a href="#g-fg" class="headerlink" title="g. fg"></a>g. <code>fg</code></h3><p>将前台最近运行的任务列出来。</p>
+<h3 id="h-finger"><a href="#h-finger" class="headerlink" title="h. finger"></a>h. <code>finger</code></h3><p>显示用户相关信息。  </p>
+<pre><code class="bash">finger username
+</code></pre>
+<h3 id="i-jobs"><a href="#i-jobs" class="headerlink" title="i. jobs"></a>i. jobs</h3><p>列出后台正在运行的任务，并给出任务号。</p>
+<h3 id="j-last"><a href="#j-last" class="headerlink" title="j. last"></a>j. <code>last</code></h3><p>列出指定用户最近登录记录。</p>
+<pre><code class="bash">last yourUsername
+</code></pre>
+<h3 id="k-man"><a href="#k-man" class="headerlink" title="k. man"></a>k. <code>man</code></h3><p>显示特定命令帮助手册。</p>
+<pre><code class="bash">man command
+</code></pre>
+<h3 id="l-passwd"><a href="#l-passwd" class="headerlink" title="l. passwd"></a>l. <code>passwd</code></h3><p>让当前登录的用户修改他的密码。</p>
+<h3 id="m-ping"><a href="#m-ping" class="headerlink" title="m. ping"></a>m. <code>ping</code></h3><p>ping 某个主机并输出结果。  </p>
+<pre><code class="bash">ping host
+</code></pre>
+<h3 id="n-ps"><a href="#n-ps" class="headerlink" title="n. ps"></a>n. <code>ps</code></h3><p>列出用户进程。</p>
+<pre><code class="bash">ps -u yourusername
+</code></pre>
+<h3 id="o-quota"><a href="#o-quota" class="headerlink" title="o. quota"></a>o. <code>quota</code></h3><p>显示你的磁盘配额情况。  </p>
+<pre><code class="bash">quota -v
+</code></pre>
+<h3 id="p-scp"><a href="#p-scp" class="headerlink" title="p. scp"></a>p. <code>scp</code></h3><p>在本地主机与远程主机之间或两个远程主机之间传输文件。</p>
+<p><em>从本地主机复制文件到远程主机</em></p>
+<pre><code class="bash">scp source_file user@host:directory/target_file
+</code></pre>
+<p><em>从远程主机复制文件到本地主机</em></p>
+<pre><code class="bash">scp user@host:directory/source_file target_file
+scp -r user@host:directory/source_folder farget_folder
+</code></pre>
+<p>此命令也可接受 <code>-P</code> 选项，用来连接到特定的端口。</p>
+<pre><code class="bash">scp -P port user@host:directory/source_file target_file
+</code></pre>
+<h3 id="q-ssh"><a href="#q-ssh" class="headerlink" title="q. ssh"></a>q. <code>ssh</code></h3><p>ssh （ssh 客户端）是一个用来登录到远程机器并在远程机器上执行命令的程序。</p>
+<pre><code class="bash">ssh user@host
+</code></pre>
+<p>此命令也可接受 <code>-P</code> 选项参数，用来连接到特定的端口。</p>
+<pre><code class="bash">ssh -p port user@host
+</code></pre>
+<h3 id="r-top"><a href="#r-top" class="headerlink" title="r. top"></a>r. <code>top</code></h3><p>显示你当前活跃的进程。</p>
+<h3 id="s-uname"><a href="#s-uname" class="headerlink" title="s. uname"></a>s. <code>uname</code></h3><p>显示内核信息。</p>
+<pre><code class="bash">uname -a
+</code></pre>
+<h3 id="t-uptime"><a href="#t-uptime" class="headerlink" title="t. uptime"></a>t. <code>uptime</code></h3><p>显示当前运行时间（译者注：即从机器上一次开机算起，到现在的在线待机时间）。</p>
+<h3 id="u-w"><a href="#u-w" class="headerlink" title="u. w"></a>u. <code>w</code></h3><p>显示当前在线用户。</p>
+<h3 id="v-wget"><a href="#v-wget" class="headerlink" title="v. wget"></a>v. <code>wget</code></h3><p>下载文件。</p>
+<pre><code class="bash">wget file
+</code></pre>
+<h3 id="w-whoami"><a href="#w-whoami" class="headerlink" title="w. whoami"></a>w. <code>whoami</code></h3><p>返回当前登录用户的名字。</p>
+<h3 id="x-whois"><a href="#x-whois" class="headerlink" title="x. whois"></a>x. <code>whois</code></h3><p>获取某个域名的 whois 信息。  </p>
+<pre><code class="bash">whois domain
+</code></pre>
+<h2 id="1-5-进程监控操作"><a href="#1-5-进程监控操作" class="headerlink" title="1.5. 进程监控操作"></a>1.5. 进程监控操作</h2><table>
+   <tr>
+      <td><a href="#a-kill">kill</a></td>
+      <td><a href="#b-killall">killall</a></td>
+      <td><a href="#c-&">&amp;</a></td>
+      <td><a href="#d-nohup">nohup</a></td>
+   </tr>
+</table>
+
+<h3 id="a-kill"><a href="#a-kill" class="headerlink" title="a. kill"></a>a. <code>kill</code></h3><p>根据给定的进程 ID 杀死（结束）该进程 </p>
+<pre><code class="bash">kill PID
+</code></pre>
+<h3 id="b-killall"><a href="#b-killall" class="headerlink" title="b. killall"></a>b. <code>killall</code></h3><p>杀死以此为名字的所有进程。 </p>
+<pre><code class="bash">killall processname
+</code></pre>
+<h3 id="c-amp"><a href="#c-amp" class="headerlink" title="c. &amp;"></a>c. &amp;</h3><p><code>&amp;</code> 标志可以使命令作为后台进程运行在 subshell 中。</p>
+<pre><code class="bash">command &amp;
+</code></pre>
+<h3 id="d-nohup"><a href="#d-nohup" class="headerlink" title="d. nohup"></a>d. <code>nohup</code></h3><p>nohup 代表 <code>No Hang Up</code> （不要挂起）的含义。它允许其它命令、进程或 shell 脚本在你终端登出之后继续在后台运行。</p>
+<pre><code class="bash">nohup command
+</code></pre>
+<p>把它和 <code>&amp;</code> 结合可以创建后台进程。</p>
+<pre><code class="bash">nohup command &amp;
+</code></pre>
+<h1 id="2-基础-Shell-编程"><a href="#2-基础-Shell-编程" class="headerlink" title="2. 基础 Shell 编程"></a>2. 基础 Shell 编程</h1><p>在 bash 脚本文件的首行被称为 <code>shebang</code> 。这一行决定了脚本可以像一个独立的可执行文件，而不用在终端之前输入 sh 、bash 、python 以及 php 等命令。</p>
+<pre><code class="bash">#!/bin/bash
+</code></pre>
+<h2 id="2-1-变量"><a href="#2-1-变量" class="headerlink" title="2.1. 变量"></a>2.1. 变量</h2><p>在 bash 中创建变量跟其它语言相似。没有变量类型一说，bash 变量可以是一个数字、一个字符或一个字符串等。同时你也无需提前申明，给变量赋值就会创建它。</p>
+<p>示例:</p>
+<pre><code class="bash">str=&quot;hello world&quot;
+</code></pre>
+<p>上面一行创建一个叫 str 的变量，并将 “hello world” 赋值给它了。通过在变量名前加 <code>$</code> 可以取得该变量的值。</p>
+<p>示例:</p>
+<pre><code class="bash">echo $str   # hello world
+</code></pre>
+<h2 id="2-2-数组"><a href="#2-2-数组" class="headerlink" title="2.2. 数组"></a>2.2. 数组</h2><p>像其它语言一样 bash 也有数组。数组是一个保存有多个值的变量。数组没有最大长度限制。bash 数组索引是从 0 开始的。在 bash 中有多种方法创建数组，下面会给出。</p>
+<p>示例:</p>
+<pre><code class="bash">array[0] = val
+array[1] = val
+array[2] = val
+array=([2]=val [0]=val [1]=val)
+array=(val val val)
+</code></pre>
+<p>使用下面语法显示数组特定索引元素的值：</p>
+<pre><code class="bash">$&#123;array[i]&#125;     # i 是数组索引值
+</code></pre>
+<p>如果没有提供数组的索引值，默认会指定为索引为 0 的第一个元素。想找出数组中有多少个元素，使用下面的语法：</p>
+<pre><code class="bash">$&#123;#array[@]&#125;
+</code></pre>
+<p>Bash 也支持三元运算符，查看下面示例：</p>
+<pre><code class="bash">$&#123;varname:-word&#125;    # 如果 varname 存在而且不为 null，返回它的值，否则返回 word
+$&#123;varname:=word&#125;    # 如果 varname 存在而且不为 null，返回它的值，否则把word赋值给它并且返回 word
+$&#123;varname:+word&#125;    # 如果 varname 存在而且不为 null，返回 word，否则返回 null
+$&#123;varname:offset:length&#125;    # 执行字符串拼接，它返回从 offset 处开始，长度为 length 的 $varname 子字符串
+</code></pre>
+<h2 id="2-3-字符串替换"><a href="#2-3-字符串替换" class="headerlink" title="2.3 字符串替换"></a>2.3 字符串替换</h2><p>通过下面语法示例学习字符串相关操作</p>
+<pre><code class="bash">$&#123;variable#pattern&#125;         # 如果 pattern 匹配变量值的起始部分，删除匹配 pattern 的最短的部分，然后返回剩余的
+$&#123;variable##pattern&#125;        # 如果 pattern 匹配变量值的起始部分，删除匹配 pattern 的最长的部分，然后返回剩余的
+$&#123;variable%pattern&#125;         # 如果 pattern 匹配变量值的结束部分，删除匹配 pattern 的最短的部分，然后返回剩余的
+$&#123;variable%%pattern&#125;        # 如果 pattern 匹配变量值的结束部分，删除匹配 pattern 的最长的部分，然后返回剩余的
+$&#123;variable/pattern/string&#125;  # 把变量值中匹配 pattern 的最长的部分替换为 string，只替换第一个匹配的部分
+$&#123;variable//pattern/string&#125; # 把变量值中匹配 pattern 的最长的部分替换为 string，进行全局替换
+$&#123;#varname&#125;     # 返回变量值作为一个字符串的长度
+</code></pre>
+<h2 id="2-4-函数"><a href="#2-4-函数" class="headerlink" title="2.4. 函数"></a>2.4. 函数</h2><p>就像其它编程语言一样，你可以使用函数（译者注：函数有时也称为方法）以更合乎逻辑的方式来聚合代码片段，或实现递归的神圣艺术。声明一个函数只需要写下 <code>function my_func &#123; my_code &#125;</code> 。调用一个函数就像调用一个程序一样，你只需写出它的名字。</p>
+<pre><code class="bash">function name() &#123;
+    shell commands
+&#125;
+</code></pre>
+<p>示例:</p>
+<pre><code class="bash">#!/bin/bash
+function hello &#123;
+   echo world!
+&#125;
+hello
+
+function say &#123;
+    echo $1
+&#125;
+say &quot;hello world!&quot;
+</code></pre>
+<p>当你运行上面示例中的 <code>hello</code> 方法时，它会输出 “world!” 。上面的两个函数 <code>hello</code> 和 <code>say</code> 是相同的。主要区别是 <code>say</code> 方法，这个方法会打印出它接收到的第一个参数。在函数中的参数与脚本中的参数处理方式是一样的。</p>
+<h2 id="2-5-条件语句"><a href="#2-5-条件语句" class="headerlink" title="2.5. 条件语句"></a>2.5. 条件语句</h2><p>在 bash 中的条件语句类似于其它语言。 条件语句有很多形式，最常见的基本形式是 <code>if</code> 表述式 <code>then</code> 语句，代表只有表达式为真时，才执行该语句。</p>
+<pre><code class="bash">if [ expression ]; then
+    will execute only if expression is true
+else
+    will execute if expression is false
+fi
+</code></pre>
+<p>有时候，如果条件比较复杂，你可以使用 <code>case statements</code> 来实现相同的条件判断。</p>
+<pre><code class="bash">case expression in
+    pattern1 )
+        statements ;;
+    pattern2 )
+        statements ;;
+    ...
+esac
+</code></pre>
+<p>表达式示例：</p>
+<pre><code class="bash">statement1 &amp;&amp; statement2  # 两个语句都为真
+statement1 || statement2  # 至少一个语句为真
+
+str1=str2       # str1 匹配 str2
+str1!=str2      # str1 不匹配 str2
+str1&lt;str2       # str1 小于 str2
+str1&gt;str2       # str1 大于 str2
+-n str1         # str1 不是 null (长度大于 0)
+-z str1         # str1 是 null (长度为 0)
+
+-a file         # 文件存在
+-d file         # 文件存在且是目录
+-e file         # 文件存在，跟 -a 一样
+-f file         # 文件存在，而且是常规文件（不是目录或者其它特殊类型的文件）
+-r file         # 拥有读权限
+-s file         # 文件存在且不为空
+-w file         # 拥有写权限
+-x file         # 拥有执行权限，或者如果它是目录，拥有搜索权限
+-N file         # 文件自上次读之后被修改过
+-O file         # 你是文件所有者
+-G file         # 文件的用户组 ID 匹配你的用户组 ID（或之一，如果你处于多用户组下)
+
+file1 -nt file2     # file1 比 file2 更新
+file1 -ot file2     # file1 比 file2 更老
+
+-lt     # 小于
+-le     # 小于等于
+-eq     # 等于
+-ge     # 大于等于
+-gt     # 大于
+-ne     # 不等于
+</code></pre>
+<h2 id="2-6-循环"><a href="#2-6-循环" class="headerlink" title="2.6. 循环"></a>2.6. 循环</h2><p>在 bash 中有三种循环类型： <code>for</code> 、 <code>while</code> 以及 <code>until</code> 。</p>
+<p>不同的 <code>for</code> 语法：</p>
+<blockquote>
+<p>译者注：修正原文的中错误的示例，请参考此 <a target="_blank" rel="noopener" href="https://github.com/Idnan/bash-guide/issues/29">issues</a> 。</p>
+</blockquote>
+<pre><code class="bash">for name [in list]
+do
+  statements that can use $name
+done
+
+for (( initialisation ; ending condition ; update ))
+do
+  statements...
+done
+</code></pre>
+<p><code>while</code> 语法:</p>
+<pre><code class="bash">while condition; do
+  statements
+done
+</code></pre>
+<p><code>until</code> 语法:</p>
+<pre><code class="bash">until condition; do
+  statements
+done
+</code></pre>
+<blockquote>
+<p>译者注：下面示例代码为译者追加的。</p>
+</blockquote>
+<p>循环相关代码示例：</p>
+<pre><code class="bash">for x in &#123;1..10&#125;
+do
+  echo $x
+done
+
+for ((i = 0; i &lt;= 10; i ++)) 
+do
+  echo $i
+done
+
+counter=1
+while [ $counter -le 10 ]
+do
+echo $counter
+((counter ++))
+done
+echo &quot;while all done&quot;
+
+counter=1
+until [ $counter -gt 10 ]
+do
+echo $counter
+((counter ++))
+done
+echo &quot;until all done&quot;
+</code></pre>
+<h1 id="3-技巧"><a href="#3-技巧" class="headerlink" title="3. 技巧"></a>3. 技巧</h1><h2 id="设置别名"><a href="#设置别名" class="headerlink" title="设置别名"></a>设置别名</h2><p>使用下面命令 <code>nano ~/.bash_profile</code> （译者注：当然你也可使用 <code>vi/vim</code> 工具，前提你已经安装过该软件包）打开 <code>bash_profile</code>  </p>
+<blockquote>
+<p>alias dockerlogin=’ssh <a href="mailto:&#x77;&#119;&#119;&#x2d;&#x64;&#97;&#x74;&#x61;&#x40;&#97;&#x64;&#x6e;&#97;&#x6e;&#46;&#x6c;&#x6f;&#x63;&#97;&#x6c;">&#x77;&#119;&#119;&#x2d;&#x64;&#97;&#x74;&#x61;&#x40;&#97;&#x64;&#x6e;&#97;&#x6e;&#46;&#x6c;&#x6f;&#x63;&#97;&#x6c;</a> -p2222’  # 在 .bash_profile 文件中增加你的别名</p>
+</blockquote>
+<h2 id="快速跳转到指定目录"><a href="#快速跳转到指定目录" class="headerlink" title="快速跳转到指定目录"></a>快速跳转到指定目录</h2><p>nano ~/.bashrc</p>
+<blockquote>
+<p>export hotellogs=”/workspace/hotel-api/storage/logs”</p>
+</blockquote>
+<pre><code class="bash">source ~/.bashrc
+cd $hotellogs
+</code></pre>
+<h2 id="跳出陷阱"><a href="#跳出陷阱" class="headerlink" title="跳出陷阱"></a>跳出陷阱</h2><p>通过可靠地执行清理代码使得你的脚本更加健壮。</p>
+<pre><code class="bash">function finish &#123;
+  # 你的清理代码，如 杀死所有 forked 进程
+  jobs -p | xargs kill
+&#125;
+trap finish EXIT
+</code></pre>
+<h2 id="保存你的环境变量"><a href="#保存你的环境变量" class="headerlink" title="保存你的环境变量"></a>保存你的环境变量</h2><p>当你执行 <code>export FOO = BAR</code> 时，你的环境变量只在当前及其子 shell 中存在，想在将来持久化它，只需追加以下命令导出你的变量到 <code>~/.bash_profile</code> 文件。</p>
+<pre><code class="bash">echo export FOO=BAR &gt;&gt; ~/.bash_profile
+</code></pre>
+<h2 id="访问你的脚本"><a href="#访问你的脚本" class="headerlink" title="访问你的脚本"></a>访问你的脚本</h2><p>通过在你的用户主目录创建一个 bin 目录，即使用 <code>mkdir ~/bin</code> 命令，在此 bin 目录下的所有脚本都能在任何别的目录中快速访问到。 </p>
+<p>如果你无法访问，尝试追加以下代码到 <code>~/.bash_profile</code> 文件，随后执行 <code>source ~/.bash_profile</code> 命令。</p>
+<pre><code class="bash">    # 设置 PATH 如果用户私有 bin 目录存在，则包括进去
+    if [ -d &quot;$HOME/bin&quot; ] ; then
+        PATH=&quot;$HOME/bin:$PATH&quot;
+    fi
+</code></pre>
+<h1 id="4-调试"><a href="#4-调试" class="headerlink" title="4. 调试"></a>4. 调试</h1><p>通过传入不同的 bash 选项参数，你可很方便地调试脚本代码。例如：<code>-n</code> 将只检查语法而不执行命令；<code>-v</code> 会在执行之前输出命令；<code>-x</code> 将在命令处理后输出命令。</p>
+<pre><code class="bash">bash -n scriptname
+bash -v scriptname
+bash -x scriptname
+</code></pre>
+<h2 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h2><ul>
+<li>报告问题 <a target="_blank" rel="noopener" href="https://help.github.com/articles/creating-an-issue/">官方帮助</a></li>
+<li>提交改进后的 pull request <a target="_blank" rel="noopener" href="https://help.github.com/articles/about-pull-requests/">官方帮助</a></li>
+<li>宣传本文档</li>
+</ul>
+<h2 id="翻译版本"><a href="#翻译版本" class="headerlink" title="翻译版本"></a>翻译版本</h2><blockquote>
+<p>译者注：官方已列出早期他人贡献的中文翻译版本，译者本人的翻译<a target="_blank" rel="noopener" href="https://github.com/ycrao/bash-guide">链接</a>，只为加深理解，在翻译中，修正了部分表述错误的地方（有译注说明），他我二人（ <code>vuuihc</code> 与 我 <code>ycrao</code> ）在翻译表述也并不尽相同，请读者自行辨别取舍阅读。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/vuuihc/bash-guide">Chinese | 简体中文</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/omergulen/bash-guide">Turkish | Türkçe</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/itooww/bash-guide">Japanese | 日本語</a></li>
+</ul>
+<h2 id="授权协议"><a href="#授权协议" class="headerlink" title="授权协议"></a>授权协议</h2><p><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a></p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 lzdong@foxmail.com </span>
+    </div>
+</article>
+
+
+
+
+
+    <div id="comments">
+    <script src="https://utteranc.es/client.js"
+            repo="wowdw/wowdw.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            label="utteranc"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry"><span class="miit">
+                <img src="/img/gov.png" title="中华人民共和国工业和信息化部">
+                <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">粤ICP备15101960号</a>
+        </span>
+    
+    ©2016-2020 lzdong
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+    #post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+
+
+
+
+
+</html>

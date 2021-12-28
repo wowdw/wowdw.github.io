@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Linux SSH ROOT相关配置 | 小胖子的blog</title>
+  <meta name="keywords" content=" Linux , SSH ">
+  <meta name="description" content="Linux SSH ROOT相关配置 | 小胖子的blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="标签">
+<meta property="og:url" content="https://blog.ydmgx.com/tags/index.html">
+<meta property="og:site_name" content="小胖子的blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-05T12:25:35.000Z">
+<meta property="article:modified_time" content="2020-07-06T03:44:17.674Z">
+<meta property="article:author" content="小胖子">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/zenbum.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>小胖子</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/wowdw"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(72)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="工具">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        工具
+                        <small>(20)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="工具<--->软件记录">
+                                        
+                                        软件记录
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="工具<--->Git">
+                                        
+                                        Git
+                                        
+                                            <small>(9
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="工具<--->Mac">
+                                        
+                                        Mac
+                                        
+                                            <small>(2
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="工具<--->Node.js">
+                                        
+                                        Node.js
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="工具<--->Python">
+                                        
+                                        Python
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="数据库">
+                        
+                        数据库
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="架构">
+                        
+                        架构
+                        <small>(3)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Laravel">
+                        
+                        Laravel
+                        <small>(18)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        
+                        Linux
+                        <small>(13)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="PHP">
+                        
+                        PHP
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Web">
+                        
+                        Web
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="72">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>跨域</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>canvas</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Centos</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Composer</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>crontab</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ImageMagick</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>imagick</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iptables</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JSON</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Laravel</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lnmp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Mac</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Mysql</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Node.js</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ohmyzsh</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>PHP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>regex</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SSH</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>web</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Yum</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="全部文章 工具 "
+           href="/ohmyzsh-plugins-composer.html"
+           data-tag="ohmyzsh"
+           data-author="" >
+            <span class="post-title" title="ohmyzsh插件 composer 相关命令">ohmyzsh插件 composer 相关命令</span>
+            <span class="post-date" title="2021-04-19 10:21:22">2021/04/19</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/Markdown-Addition-and-deletion-effect.html"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown 如何实现代码增删对比效果">Markdown 如何实现代码增删对比效果</span>
+            <span class="post-date" title="2021-03-29 19:04:22">2021/03/29</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/ohmyzsh-plugins-laravel.html"
+           data-tag="ohmyzsh"
+           data-author="" >
+            <span class="post-title" title="ohmyzsh插件laravel相关命令">ohmyzsh插件laravel相关命令</span>
+            <span class="post-date" title="2021-03-27 22:13:58">2021/03/27</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/web-nginx-php-vue.html"
+           data-tag="web"
+           data-author="" >
+            <span class="post-title" title="Nginx代理同域名前后端分离项目">Nginx代理同域名前后端分离项目</span>
+            <span class="post-date" title="2021-03-07 20:42:10">2021/03/07</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/web-tools-UI-Avatars.html"
+           data-tag="web"
+           data-author="" >
+            <span class="post-title" title="UI Avatars 拿来即用的头像生成Api">UI Avatars 拿来即用的头像生成Api</span>
+            <span class="post-date" title="2021-03-06 20:42:10">2021/03/06</span>
+        </a>
+        
+        <a  class="全部文章 工具 Mac "
+           href="/mac-tools-Homebrew.html"
+           data-tag="Mac"
+           data-author="" >
+            <span class="post-title" title="MacOS软件包管理工具Homebrew">MacOS软件包管理工具Homebrew</span>
+            <span class="post-date" title="2021-03-05 21:42:10">2021/03/05</span>
+        </a>
+        
+        <a  class="全部文章 工具 Mac "
+           href="/mac-tools-iTerm2.html"
+           data-tag="Mac"
+           data-author="" >
+            <span class="post-title" title="Mac系统终端iTerm2">Mac系统终端iTerm2</span>
+            <span class="post-date" title="2021-03-05 20:42:10">2021/03/05</span>
+        </a>
+        
+        <a  class="全部文章 工具 Python "
+           href="/python-tools-pyenv.html"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="Python版本管理工具 pyenv">Python版本管理工具 pyenv</span>
+            <span class="post-date" title="2021-03-05 19:42:10">2021/03/05</span>
+        </a>
+        
+        <a  class="全部文章 工具 Node.js "
+           href="/nodejs-tools-n.html"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="node.js版本管理工具n">node.js版本管理工具n</span>
+            <span class="post-date" title="2021-03-05 18:42:55">2021/03/05</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/http-status-code.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="HTTP状态码（HTTP STATUS CODE）大全">HTTP状态码（HTTP STATUS CODE）大全</span>
+            <span class="post-date" title="2020-08-26 15:00:06">2020/08/26</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php-composer.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Composer安装">Composer安装</span>
+            <span class="post-date" title="2020-08-25 22:26:16">2020/08/25</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/web-jsonp.html"
+           data-tag="跨域"
+           data-author="" >
+            <span class="post-title" title="JSONP跨域">JSONP跨域</span>
+            <span class="post-date" title="2020-08-25 22:19:00">2020/08/25</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/canvas-doc.html"
+           data-tag="canvas"
+           data-author="" >
+            <span class="post-title" title="canvas 常用操作">canvas 常用操作</span>
+            <span class="post-date" title="2020-08-25 22:11:04">2020/08/25</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/python-tools-valet.html"
+           data-tag="Mac"
+           data-author="" >
+            <span class="post-title" title="Valet 集成开发环境">Valet 集成开发环境</span>
+            <span class="post-date" title="2020-08-08 21:41:46">2020/08/08</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/web-tool-jscdn.html"
+           data-tag="JS"
+           data-author="" >
+            <span class="post-title" title="JS公共库">JS公共库</span>
+            <span class="post-date" title="2020-07-09 15:58:23">2020/07/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-update.html"
+           data-tag="Git,Centos"
+           data-author="" >
+            <span class="post-title" title="Git版本升级">Git版本升级</span>
+            <span class="post-date" title="2020-07-09 15:58:23">2020/07/09</span>
+        </a>
+        
+        <a  class="全部文章 Web "
+           href="/web/web-tool-jsgetip.html"
+           data-tag="IP"
+           data-author="" >
+            <span class="post-title" title="Js获取客户端IP">Js获取客户端IP</span>
+            <span class="post-date" title="2020-07-06 10:50:40">2020/07/06</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-label.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git标签管理">Git标签管理</span>
+            <span class="post-date" title="2020-07-05 20:20:07">2020/07/05</span>
+        </a>
+        
+        <a  class="全部文章 架构 "
+           href="/Design-of-membership-points-system.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="会员积分体系设计">会员积分体系设计</span>
+            <span class="post-date" title="2020-03-30 15:15:30">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 架构 "
+           href="/Design-of-general-payment-service-in-single-application.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="单体应用中的通用支付服务设计">单体应用中的通用支付服务设计</span>
+            <span class="post-date" title="2020-03-30 15:15:30">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 架构 "
+           href="/User-wallet-design.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="用户钱包（账户）设计">用户钱包（账户）设计</span>
+            <span class="post-date" title="2020-03-30 15:15:30">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/laravel/laravel-composer.html"
+           data-tag="PHP,Composer"
+           data-author="" >
+            <span class="post-title" title="Composer 版本号前置~与^符号的区别">Composer 版本号前置~与^符号的区别</span>
+            <span class="post-date" title="2020-03-19 12:06:23">2020/03/19</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-aggregate-group.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-聚合分组">MySQL-聚合分组</span>
+            <span class="post-date" title="2019-12-14 12:11:17">2019/12/14</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-index.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-索引">MySQL-索引</span>
+            <span class="post-date" title="2019-12-13 12:11:17">2019/12/13</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-user-password.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-8修改用户登录密码">MySQL-8修改用户登录密码</span>
+            <span class="post-date" title="2019-12-11 13:02:20">2019/12/11</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-user.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-用户添加及权限">MySQL-用户添加及权限</span>
+            <span class="post-date" title="2019-11-11 13:32:17">2019/11/11</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-base.html"
+           data-tag="Linux,bash"
+           data-author="" >
+            <span class="post-title" title="linux bash 命令入门">linux bash 命令入门</span>
+            <span class="post-date" title="2019-11-11 13:32:17">2019/11/11</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-field-type.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-数据的字段类型">MySQL-数据的字段类型</span>
+            <span class="post-date" title="2019-10-13 12:11:17">2019/10/13</span>
+        </a>
+        
+        <a  class="全部文章 数据库 "
+           href="/db-mysql-base.html"
+           data-tag="Mysql"
+           data-author="" >
+            <span class="post-title" title="MySQL-库表操作基础命令">MySQL-库表操作基础命令</span>
+            <span class="post-date" title="2019-10-11 13:32:17">2019/10/11</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-bt-webhook.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="宝塔WebHook自动部署-Gogs">宝塔WebHook自动部署-Gogs</span>
+            <span class="post-date" title="2019-04-02 00:45:43">2019/04/02</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/CentOS-password-free-switch-to-root.html"
+           data-tag="Linux,SSH"
+           data-author="" >
+            <span class="post-title" title="CentOS免密码切换至root">CentOS免密码切换至root</span>
+            <span class="post-date" title="2019-04-02 00:08:51">2019/04/02</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php/PHP-date%E6%97%B6%E9%97%B4.html"
+           data-tag="PHP"
+           data-author="" >
+            <span class="post-title" title="PHP date时间">PHP date时间</span>
+            <span class="post-date" title="2019-03-26 23:37:47">2019/03/26</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-redis.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel操作redis数据库的数据类型(string、哈希、无序集合、list链表、有序集合)">Laravel操作redis数据库的数据类型(string、哈希、无序集合、list链表、有序集合)</span>
+            <span class="post-date" title="2019-03-26 23:23:30">2019/03/26</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-file-update.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 文件上传">Laravel 文件上传</span>
+            <span class="post-date" title="2019-03-26 22:59:34">2019/03/26</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-centos-path.html"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="CentOS环境变量配置">CentOS环境变量配置</span>
+            <span class="post-date" title="2019-03-20 11:51:28">2019/03/20</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-csrf-git.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel中ajax post提交csrf token的最优化解决方式">Laravel中ajax post提交csrf token的最优化解决方式</span>
+            <span class="post-date" title="2019-02-19 12:06:23">2019/02/19</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-queue.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel-队列">Laravel-队列</span>
+            <span class="post-date" title="2019-02-19 12:06:23">2019/02/19</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel-adminLte.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel-adminLte 后台搭建">Laravel-adminLte 后台搭建</span>
+            <span class="post-date" title="2019-02-19 12:06:23">2019/02/19</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/Laravel-route-cache.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel-路由缓存">Laravel-路由缓存</span>
+            <span class="post-date" title="2018-10-08 23:10:06">2018/10/08</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-routes-RESTful.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel-资源路由">Laravel-资源路由</span>
+            <span class="post-date" title="2018-10-08 22:50:33">2018/10/08</span>
+        </a>
+        
+        <a  class="全部文章 工具 软件记录 "
+           href="/regular-expression.html"
+           data-tag="regex"
+           data-author="" >
+            <span class="post-title" title="正则表达式详解">正则表达式详解</span>
+            <span class="post-date" title="2018-10-04 09:41:40">2018/10/04</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/Linux-process-suspend-and-resume.html"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="Linux 的进程挂起和恢">Linux 的进程挂起和恢</span>
+            <span class="post-date" title="2018-09-25 11:56:11">2018/09/25</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-gogs-config.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git服务器之Gogs配置">Git服务器之Gogs配置</span>
+            <span class="post-date" title="2018-09-19 15:58:23">2018/09/19</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-gogs.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git服务器之Gogs搭建">Git服务器之Gogs搭建</span>
+            <span class="post-date" title="2018-09-19 15:58:23">2018/09/19</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/tools/git-reset-update.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git强制拉取">Git强制拉取</span>
+            <span class="post-date" title="2018-09-19 15:58:23">2018/09/19</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-CentOS-Yum-repo.html"
+           data-tag="Linux,Yum"
+           data-author="" >
+            <span class="post-title" title="CentOS更换Yum源">CentOS更换Yum源</span>
+            <span class="post-date" title="2018-09-18 11:51:28">2018/09/18</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php/JSON.html"
+           data-tag="PHP,JSON"
+           data-author="" >
+            <span class="post-title" title="PHP JSON">PHP JSON</span>
+            <span class="post-date" title="2018-09-18 11:51:28">2018/09/18</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-command.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git常用命令">Git常用命令</span>
+            <span class="post-date" title="2018-09-15 12:26:11">2018/09/15</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/Laravel-Batch-update-data.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 批量更新数据">Laravel 批量更新数据</span>
+            <span class="post-date" title="2018-09-11 11:57:23">2018/09/11</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/View-crontab-log-records.html"
+           data-tag="Linux,crontab"
+           data-author="" >
+            <span class="post-title" title="如何查看crontab的日志记录">如何查看crontab的日志记录</span>
+            <span class="post-date" title="2018-09-10 14:18:17">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/Linux-crontab-command.html"
+           data-tag="Linux,crontab"
+           data-author="" >
+            <span class="post-title" title="Linux crontab命令">Linux crontab命令</span>
+            <span class="post-date" title="2018-09-10 12:29:20">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/Laravel-log.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 的日志变得巨大，如何按照日期来切分日志？">Laravel 的日志变得巨大，如何按照日期来切分日志？</span>
+            <span class="post-date" title="2018-09-10 11:54:20">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/Laravel-request-change.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel Request对象的修改">Laravel Request对象的修改</span>
+            <span class="post-date" title="2018-09-10 11:54:20">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-redis-config.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 下配置 Redis 让缓存、Session 各自使用不同的 Redis 数据库">Laravel 下配置 Redis 让缓存、Session 各自使用不同的 Redis 数据库</span>
+            <span class="post-date" title="2018-09-10 11:47:54">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/crontab.html"
+           data-tag="Laravel,Linux"
+           data-author="" >
+            <span class="post-title" title="定时任务">定时任务</span>
+            <span class="post-date" title="2018-09-10 11:42:55">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-specification.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git版本管理规范">Git版本管理规范</span>
+            <span class="post-date" title="2018-09-10 11:42:55">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 Git "
+           href="/git-key-config.html"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="一个客户端设置多个 github 账号">一个客户端设置多个 github 账号</span>
+            <span class="post-date" title="2018-09-10 11:42:55">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/Linux-login-prompt-modification.html"
+           data-tag="Linux,SSH"
+           data-author="" >
+            <span class="post-title" title="Linux登录提示修改">Linux登录提示修改</span>
+            <span class="post-date" title="2018-09-10 11:33:17">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/ssh-keygen.html"
+           data-tag="Linux,SSH,Git"
+           data-author="" >
+            <span class="post-title" title="ssh-keygen 基本用法">ssh-keygen 基本用法</span>
+            <span class="post-date" title="2018-09-10 10:58:37">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-iptables.html"
+           data-tag="Linux,iptables"
+           data-author="" >
+            <span class="post-title" title="linux 防火墙 iptables 配置">linux 防火墙 iptables 配置</span>
+            <span class="post-date" title="2018-09-10 10:53:55">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/Linux-login-prompt-modification.html"
+           data-tag="Linux,SSH"
+           data-author="" >
+            <span class="post-title" title="Linux SSH ROOT相关配置">Linux SSH ROOT相关配置</span>
+            <span class="post-date" title="2018-09-10 10:28:41">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/linux/linux-lunp-user-ini.html"
+           data-tag="lnmp"
+           data-author="" >
+            <span class="post-title" title="无法删除“.user.ini”文件解决方法">无法删除“.user.ini”文件解决方法</span>
+            <span class="post-date" title="2018-09-10 10:11:46">2018/09/10</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php/php-ImageMagick&imagick.html"
+           data-tag="PHP,imagick,ImageMagick"
+           data-author="" >
+            <span class="post-title" title="ImageMagick安装和PHP imagick扩展">ImageMagick安装和PHP imagick扩展</span>
+            <span class="post-date" title="2018-09-04 10:12:44">2018/09/04</span>
+        </a>
+        
+        <a  class="全部文章 PHP "
+           href="/php/php-ImageMagick-imagick.html"
+           data-tag="PHP,imagick"
+           data-author="" >
+            <span class="post-title" title="图片处理ImageMagick之PHP imagick扩展文档">图片处理ImageMagick之PHP imagick扩展文档</span>
+            <span class="post-date" title="2018-09-03 14:56:01">2018/09/03</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-database-seeder.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 数据库：填充">Laravel 数据库：填充</span>
+            <span class="post-date" title="2018-08-09 12:07:23">2018/08/09</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-database-migration-demo.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 数据库：迁移 Demo">Laravel 数据库：迁移 Demo</span>
+            <span class="post-date" title="2018-08-08 12:06:23">2018/08/08</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-database-migration.html"
+           data-tag="Laravel,PHP"
+           data-author="" >
+            <span class="post-title" title="Laravel 数据库：迁移">Laravel 数据库：迁移</span>
+            <span class="post-date" title="2018-08-08 12:06:23">2018/08/08</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/Basic-operation-of-docker.html"
+           data-tag="docker"
+           data-author="" >
+            <span class="post-title" title="整理记录 docker 基本操作使用">整理记录 docker 基本操作使用</span>
+            <span class="post-date" title="2007-03-30 15:36:06">2007/03/30</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-command.html"
+           data-tag="Laravel"
+           data-author="" >
+            <span class="post-title" title="Laravel 常用操作">Laravel 常用操作</span>
+            <span class="post-date" title="2000-03-06 20:42:10">2000/03/06</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-header.html"
+           data-tag="Laravel"
+           data-author="" >
+            <span class="post-title" title="Laravel 自定义助手函数">Laravel 自定义助手函数</span>
+            <span class="post-date" title="2000-03-06 20:42:10">2000/03/06</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/laravel/laravel-storage-link.html"
+           data-tag="Laravel"
+           data-author="" >
+            <span class="post-title" title="Laravel 软连接">Laravel 软连接</span>
+            <span class="post-date" title="2000-03-06 20:42:10">2000/03/06</span>
+        </a>
+        
+        <a  class="全部文章 Laravel "
+           href="/Laravel-learning-materials-and-open-source-project.html"
+           data-tag="Laravel"
+           data-author="" >
+            <span class="post-title" title="Laravel 学习资料和开源项目">Laravel 学习资料和开源项目</span>
+            <span class="post-date" title="2000-03-06 20:42:10">2000/03/06</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-linux/Linux-SSH-ROOT相关配置" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Linux SSH ROOT相关配置</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Linux">Linux</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">Linux</a>
+            
+            <a class="color4">SSH</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-03-29 13:16:14'>2018-09-10 10:28</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E4%BF%AE%E6%94%B9ssh%E7%AB%AF%E5%8F%A322"><span class="toc-text">Linux修改ssh端口22</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%81%E7%94%A8root%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95"><span class="toc-text">禁用root远程登录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E4%BA%A7%E6%9C%BA%E5%99%A8%E7%A6%81%E6%AD%A2ROOT%E8%BF%9C%E7%A8%8BSSH%E7%99%BB%E5%BD%95%EF%BC%9A"><span class="toc-text">生产机器禁止ROOT远程SSH登录：</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Linux修改ssh端口22"><a href="#Linux修改ssh端口22" class="headerlink" title="Linux修改ssh端口22"></a>Linux修改ssh端口22</h2><pre><code>vi /etc/ssh/ssh_config
+</code></pre>
+<pre><code>vi /etc/ssh/sshd_config
+</code></pre>
+<p>然后修改为port <code>8888</code></p>
+<p>以root身份service sshd restart (redhat as3)</p>
+<p>使用putty,端口<code>8888</code></p>
+<p>Linux下SSH默认的端口是22,为了安全考虑，现修改SSH的端口为1433,修改方法如下 ：</p>
+<pre><code class="base">/usr/sbin/sshd -p 1433
+</code></pre>
+<h2 id="禁用root远程登录"><a href="#禁用root远程登录" class="headerlink" title="禁用root远程登录"></a>禁用root远程登录</h2><pre><code># 为增强安全 先增加一个普通权限的用户：
+useradd PGOne
+# 设置密码
+passwd PGOne
+</code></pre>
+<p>切换到root用户，运行 <code>visudo</code> 命令</p>
+<p>在打开的配置文件中，找到root ALL=(ALL) ALL，在下面添加一行</p>
+<pre><code># 其中xxx是你要加入的用户名称
+xxx ALL=(ALL) ALL
+</code></pre>
+<h3 id="生产机器禁止ROOT远程SSH登录："><a href="#生产机器禁止ROOT远程SSH登录：" class="headerlink" title="生产机器禁止ROOT远程SSH登录："></a>生产机器禁止ROOT远程SSH登录：</h3><pre><code class="base">vi /etc/ssh/sshd_config
+</code></pre>
+<p>修改 <code>PermitRootLogin</code> 为 <code>no</code></p>
+<pre><code class="diff">- PermitRootLogin yes
++ PermitRootLogin no
+</code></pre>
+<p>重启sshd服务</p>
+<pre><code class="base">service sshd restart
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 lzdong@foxmail.com </span>
+    </div>
+</article>
+
+
+
+
+
+    <div id="comments">
+    <script src="https://utteranc.es/client.js"
+            repo="wowdw/wowdw.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            label="utteranc"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry"><span class="miit">
+                <img src="/img/gov.png" title="中华人民共和国工业和信息化部">
+                <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">粤ICP备15101960号</a>
+        </span>
+    
+    ©2016-2020 lzdong
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+    #post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+
+
+
+
+
+</html>
