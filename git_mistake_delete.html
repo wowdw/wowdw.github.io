@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Composer 版本号前置~与^符号的区别 | 小胖子的blog</title>
-  <meta name="keywords" content=" PHP , Composer ">
-  <meta name="description" content="Composer 版本号前置~与^符号的区别 | 小胖子的blog">
+  <title>Git 误删的本地分支恢复方法 | 小胖子的blog</title>
+  <meta name="keywords" content=" Git ">
+  <meta name="description" content="Git 误删的本地分支恢复方法 | 小胖子的blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="it  log  -g 找回之前提交的commit,并记下commit_id  git  branch  newbranch  commit_id  切换到 newbranch 分支，检查文件是否存在。">
 <meta property="og:type" content="article">
@@ -1094,9 +1094,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-laravel/laravel-composer" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-tools/Git误删的本地分支恢复方法" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Composer 版本号前置~与^符号的区别</h1>
+        <h1 class="article-title">Git 误删的本地分支恢复方法</h1>
     
     <div class="article-meta">
         
@@ -1106,7 +1106,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="PHP">PHP</a>
+            <a  data-rel="工具">工具</a> > 
+            
+            <a  data-rel="工具&lt;---&gt;Git">Git</a>
             
         </span>
         
@@ -1114,16 +1116,14 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color4">PHP</a>
-            
-            <a class="color4">Composer</a>
+            <a class="color4">Git</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-07-08 19:19:01'>2020-03-19 12:06</time>
+            发布时间 : <time class="date" title='最后更新: 2022-03-21 13:03:20'>2022-03-21 13:03</time>
         
     </div>
     <div class="article-meta">
@@ -1172,9 +1172,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p> ~和^的意思很接近，在x.y的情况下是一样的都是代表x.y &lt;= 版本号 &lt; (x+1).0，但是在版本号是x.y.z的情况下有区别，举个例子吧：</p>
-<p>~1.2.3 代表 1.2.3 &lt;= 版本号 &lt; 1.3.0</p>
-<p>^1.2.3 代表 1.2.3 &lt;= 版本号 &lt; 2.0.0</p>
+        <ol>
+<li><p>it  log  -g 找回之前提交的commit,并记下commit_id</p>
+</li>
+<li><p>git  branch  newbranch  commit_id</p>
+</li>
+<li><p>切换到 newbranch 分支，检查文件是否存在。</p>
+</li>
+</ol>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 lzdong@foxmail.com </span>
